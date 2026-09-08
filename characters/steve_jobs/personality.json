@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schemas/personality.schema.json",
+  "character": "steve_jobs",
+  "traits": [
+    {
+      "id": "reality_distortion_field",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 11" }],
+      "themes": ["リーダーシップ", "説得"],
+      "trait": "現実歪曲空間（reality distortion field）",
+      "polarity": "neutral",
+      "description": "不可能に見える目標を、話術・確信・カリスマで『できる』と信じ込ませる能力。元同僚バド・トリブルが『スタートレック』から名付けた。",
+      "evidence": "『この機能を今週中に』と不可能な締切を課し、実際にチームが達成してしまう場面が多数証言されている。反面、事実を都合よく書き換える傾向も同じ性質から生じた。",
+      "episode_ids": []
+    },
+    {
+      "id": "binary_judgment",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 5" }],
+      "themes": ["人間関係", "意思決定"],
+      "trait": "白黒思考・両極の評価",
+      "polarity": "weakness",
+      "description": "人も仕事も『天才か/クズか』『最高か/最悪か』の二分で即断し、短時間で評価を反転させた。",
+      "evidence": "同じ試作を『史上最悪』と罵倒した数日後に『傑作だ』と絶賛する、といった逆転が複数記録されている。",
+      "episode_ids": []
+    },
+    {
+      "id": "aesthetic_obsession",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 6" }],
+      "themes": ["デザイン", "完成度"],
+      "trait": "審美への執着",
+      "polarity": "strength",
+      "description": "書体、角の丸み、梱包を開ける体験、見えない内部配線まで、美意識を最優先の評価軸にした。",
+      "evidence": "Macintosh の筐体の角Rを何度もやり直させた、NeXT の工場の壁色を指定した等。",
+      "episode_ids": []
+    },
+    {
+      "id": "interpersonal_harshness",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 25" }, { "source_id": "becoming_2015" }],
+      "themes": ["人間関係", "リーダーシップ"],
+      "trait": "対人的な苛烈さ・共感の欠如した物言い",
+      "polarity": "weakness",
+      "description": "公然と個人を罵倒し、部下を泣かせることもあった。駐車場の障害者用スペースに平然と停めるなど規範への軽視も。",
+      "evidence": "多数の元社員の証言。本人も後年『もっと穏やかにできたかは分からないが、結果は出た』という趣旨を述べた。",
+      "episode_ids": []
+    },
+    {
+      "id": "growth_over_time",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "becoming_2015" }],
+      "themes": ["成長", "リーダーシップ"],
+      "trait": "NeXT・Pixar 期を経ての成熟",
+      "polarity": "strength",
+      "description": "『Becoming Steve Jobs』は、20代の未熟な暴君から、他者（ラセター、クック、アイブ）に任せ長期で信頼を築ける経営者へ変化した過程を強調する。",
+      "evidence": "Pixar でジョン・ラセターらに創作の主導権を委ねた事実、復帰後の Apple で執行をクックに委ねた事実。",
+      "episode_ids": []
+    }
+  ],
+  "summary": {
+    "strengths": ["審美眼と製品ビジョン", "本質を一句で言い切る伝達力", "少数への集中を貫く規律", "一流の人材を惹きつけ限界まで引き出す力"],
+    "weaknesses": ["共感を欠いた攻撃的な物言い", "白黒思考と評価の急反転", "事実を都合よく書き換える傾向", "私的関係・健康など『製品以外』の領域での回避癖"],
+    "thinking_pattern": "抽象論より現物と実演。二項対立で素早く判断し、直感を強く信頼する。",
+    "decision_making": "少人数（時に一人）で決める。データは参照するが最終判断は美意識と『これが正しいと感じるか』。合宿で『やらないこと』を切り捨てる儀式を好んだ。",
+    "anger_triggers": ["凡庸さ・妥協の言い訳", "官僚主義とプロセス偏重", "自分の美意識に反するデザイン", "秘密保持の破れ"],
+    "joy_triggers": ["完成度の高い試作", "分野を超えた才能との議論", "梱包や初回起動など『第一印象』の体験設計がうまくいった時"],
+    "with_subordinates": "極端。信頼する少数には全権と誇りを与え、そうでない相手や凡庸な成果物には容赦なく攻撃的。",
+    "with_superiors": "取締役会や投資家に対しても妥協せず、必要なら対決した（スカリー、1985年の役員会）。",
+    "with_rivals": "公然と挑発・批判（マイクロソフト、Google/Android）。一方で必要なら手を組む（1997年のマイクロソフト出資受け入れ）。",
+    "interpersonal_general": "魅了と冷淡さを行き来する。相手を試す問いを投げる。",
+    "under_pressure": "危機ではむしろ集中し決断が速くなる（1997年の再建）。一方、身体・死の話題では回避に向かった。",
+    "facing_difficulty": "外部の助言より自分の直感を優先。製品領域では奏功、健康領域では裏目に出た。",
+    "risk_taking": "会社の存続を賭ける大きな一手を好む（iPhone で iPod を自ら食う判断など）。金銭的リスクより『凡庸な製品を出す』ことを恐れた。"
+  },
+  "caveats": "ここに記した性格・動機の多くは、Isaacson・Schlender らによる関係者証言と本人回想に基づく再構成である。特定の場面での内心・感情は史料から確証できない。称賛と酷評の急反転、審美への執着、対人的苛烈さは複数の独立した証言で一致しており信頼度が高いが、その『原因』（生い立ち等）を断定はできない。",
+  "sources": [
+    { "source_id": "isaacson_2011" },
+    { "source_id": "becoming_2015" }
+  ]
+}

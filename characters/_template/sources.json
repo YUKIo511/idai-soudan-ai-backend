@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/sources.schema.json",
+  "character": "REPLACE_ME",
+  "sources": [
+    {
+      "id": "example_book_2020",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "",
+      "authors": [],
+      "publisher": "",
+      "year": "2020",
+      "language": "ja",
+      "is_primary_source": false,
+      "reliability_note": ""
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "statements.schema.json",
+  "title": "発言・文章（spec §6）",
+  "description": "名言化されていない、思想理解のための一次資料。インタビュー/スピーチ/手紙/著書/論文/日記/演説/会見/公開コメント。長文本文は knowledge/supplement/ の .md に置き full_text_ref で指す運用も可。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "statements": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "interview",
+                  "speech",
+                  "letter",
+                  "book_excerpt",
+                  "paper_excerpt",
+                  "diary",
+                  "address",
+                  "press_conference",
+                  "public_comment",
+                  "testimony",
+                  "other"
+                ]
+              },
+              "date": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "place": {
+                "type": "string"
+              },
+              "audience": {
+                "type": "string",
+                "description": "宛先・聴衆"
+              },
+              "medium": {
+                "type": "string",
+                "description": "掲載媒体・所蔵先"
+              },
+              "language": {
+                "type": "string",
+                "description": "BCP47"
+              },
+              "excerpt": {
+                "type": "string",
+                "description": "抜粋（原語または訳。長文は full_text_ref を使う）"
+              },
+              "translation": {
+                "type": "string",
+                "description": "日本語訳（excerpt が原語のとき）"
+              },
+              "full_text_ref": {
+                "type": "string",
+                "description": "knowledge/supplement/ 内のファイル名など"
+              },
+              "summary": {
+                "type": "string",
+                "description": "要旨"
+              },
+              "topics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "title",
+              "type"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "statements"
+  ],
+  "additionalProperties": false
+}

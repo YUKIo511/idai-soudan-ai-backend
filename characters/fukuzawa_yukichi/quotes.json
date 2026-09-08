@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schemas/quotes.schema.json",
+  "character": "fukuzawa_yukichi",
+  "quotes": [
+    {
+      "id": "ten_wa_hito_no_ue_ni",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume", "locator": "初編 冒頭" }],
+      "themes": ["平等", "独立", "学問"],
+      "text": {
+        "original": "天は人の上に人を造らず人の下に人を造らずと云へり。",
+        "original_lang": "ja",
+        "ja": "天は人の上に人を造らず、人の下に人を造らず、と言われている。",
+        "en": "It is said that Heaven does not create one person above or below another."
+      },
+      "attribution_status": "verified",
+      "said_on": "1872",
+      "medium": "『学問のすゝめ』初編",
+      "context": "四民平等が制度化された直後、人はなぜ学ぶべきかを説く導入。",
+      "background": "アメリカ独立宣言の趣旨を踏まえた表現とされ、福澤自身『と云へり』（〜と言われている）と伝聞の形で書いている。続けて『されども今広くこの人間世界を見渡すに…賢人あり愚人あり』と、現実の差は学ぶか否かで生じると論じる。",
+      "meaning": "人は生まれつき平等だが、学問の有無が現実の地位・境遇の差を生む。だから学べ、という論の起点。",
+      "relation_to_thought": "『独立』『実学』の思想全体の入口。単独の平等宣言ではなく、努力論とセットで読む必要がある。",
+      "variants": ["天は人の上に人を造らず人の下に人を造らず"]
+    },
+    {
+      "id": "isshin_dokuritsu",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume", "locator": "三編" }],
+      "themes": ["独立", "国家", "個人"],
+      "text": {
+        "original": "一身独立して一国独立す。",
+        "original_lang": "ja",
+        "ja": "一人ひとりが独立してこそ、一つの国が独立する。",
+        "en": "When each individual is independent, the nation is independent."
+      },
+      "attribution_status": "verified",
+      "said_on": "1873",
+      "medium": "『学問のすゝめ』三編",
+      "context": "国の独立を支えるのは何か、を論じる章。",
+      "background": "他人の判断に頼り、権威に盲従する人々の集まりでは、対外的に自立した国にはなれない、という主張。",
+      "meaning": "国家の独立は軍備や制度だけでなく、判断し責任を負う個人の存在に依存する。",
+      "relation_to_thought": "個人の自立を国家の独立の『土台』とする発想。後年、後段（一国独立）が強調され国家主義的に読まれた経緯がある（[[gakumon_misreading]]）。"
+    },
+    {
+      "id": "monbatsu_wa_oya_no_kataki",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「幼少の時」" }],
+      "themes": ["身分", "怒り", "生い立ち"],
+      "text": {
+        "original": "門閥制度は親の敵（かたき）でござる。",
+        "original_lang": "ja",
+        "ja": "門閥（家柄）制度は、私にとって親の敵だ。",
+        "en": "The system of hereditary rank is, to me, the enemy of my father."
+      },
+      "attribution_status": "verified",
+      "said_on": "1899",
+      "medium": "『福翁自伝』",
+      "context": "学問のあった父が、下士の家柄ゆえに一生を蔵屋敷の会計役で終えたことを回想して。",
+      "background": "父の無念を思うと『門閥制度』こそが親の一生を奪った仇だ、という強い言い方。",
+      "meaning": "生まれで人の可能性を決める仕組みへの、生涯変わらぬ憤り。",
+      "relation_to_thought": "平等・独立の主張の感情的な源泉。"
+    },
+    {
+      "id": "dokuritsu_jison",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuzawa_zenshu", "locator": "『修身要領』(1900)" }],
+      "themes": ["独立", "人格", "倫理"],
+      "text": {
+        "original": "独立自尊",
+        "original_lang": "ja",
+        "ja": "独立自尊（自らの心身の独立を全うし、自らその人格の尊厳を保つこと）",
+        "en": "Independence and self-respect"
+      },
+      "attribution_status": "likely",
+      "said_on": "1900",
+      "medium": "『修身要領』（福澤の主旨を門下がまとめた徳目集）",
+      "context": "晩年、慶應義塾の生き方の指針として29条にまとめられたもの。",
+      "background": "文言の最終整形は門下（小幡篤次郎ら）によるが、思想の骨子は福澤のものとされる。",
+      "meaning": "他に依存せず自分の判断と労働で立ち、同時に自分の人格の尊厳を守る。他者の独立も尊重する。",
+      "relation_to_thought": "『一身独立』を個人倫理の標語に凝縮したもの。慶應義塾の理念として現在も使われる。"
+    },
+    {
+      "id": "jitsugaku_definition",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume", "locator": "初編" }],
+      "themes": ["教育", "実学", "学問"],
+      "text": {
+        "original": "学問とは、ただ難き字を知り、解し難き古文を読み、和歌を楽しみ、詩を作るなど、世上に実のなき文学を云ふにあらず。",
+        "original_lang": "ja",
+        "ja": "学問とは、難しい字を覚え、読みにくい古文を読み、和歌や漢詩を楽しむような、実生活の役に立たない文芸のことではない。",
+        "en": "Learning is not merely knowing difficult characters and reading obscure classics."
+      },
+      "attribution_status": "verified",
+      "said_on": "1872",
+      "medium": "『学問のすゝめ』初編",
+      "context": "『すゝめる学問』が何かを定義する箇所。",
+      "background": "続けて、手紙・帳簿・算盤・天秤の使い方など『人間普通日用に近き実学』を第一に挙げる。",
+      "meaning": "学問は生活と仕事に役立つ実用の知（実学）を第一とする。教養や文芸を否定するのではなく、優先順位の話。",
+      "relation_to_thought": "適塾での実地の学びの経験と、慶應義塾の実学重視に直結する。"
+    },
+    {
+      "id": "pen_wa_ken_yori_misattrib",
+      "reliability": "legend",
+      "sources": [{ "source_id": "hirayama_2004" }],
+      "themes": ["誤帰属", "言論"],
+      "text": {
+        "original": "ペンは剣よりも強し",
+        "original_lang": "ja",
+        "ja": "ペンは剣よりも強し",
+        "en": "The pen is mightier than the sword."
+      },
+      "attribution_status": "misattributed",
+      "background": "在野で言論を貫いた福澤の生き方に結びつけて引用されることがあるが、この句は英国の作家ブルワー＝リットン（戯曲『リシュリュー』1839）の言葉であり、福澤の発言ではない。福澤自身がこの成句を座右としたという一次資料も確認されない。",
+      "meaning": "言論の力は武力に勝る、という警句。",
+      "relation_to_thought": "福澤の在野言論の姿勢と親和的だが、本人の言葉として引用してはならない。"
+    }
+  ]
+}

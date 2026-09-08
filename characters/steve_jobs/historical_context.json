@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/historical_context.schema.json",
+  "character": "steve_jobs",
+  "period_label": "パーソナルコンピュータの誕生からスマートフォン普及まで（1970s–2011）",
+  "span": { "start": "1971", "end": "2011" },
+  "contexts": [
+    {
+      "id": "homebrew_counterculture_1970s",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 4" }],
+      "themes": ["文化", "技術"],
+      "domain": "culture",
+      "region": "サンフランシスコ・ベイエリア",
+      "period": { "start": "1968", "end": "1978" },
+      "title": "カウンターカルチャーと自作コンピュータ文化の交差",
+      "summary": "反体制・東洋思想・サイケデリック体験と、電子工作ホビイズム（Homebrew Computer Club, Whole Earth Catalog）が同じ地域で重なっていた。コンピュータは『大企業と政府の道具』から『個人を解放する道具』へと意味づけが転換しつつあった。",
+      "relevance_to_subject": "ジョブズの禅・菜食・インド放浪と、テクノロジーによる個人の力の拡張という信条は、この文化的土壌から来ている。『Stay hungry, stay foolish』の出典 Whole Earth Catalog もこの文脈。",
+      "contrast_with_today": "現在テック企業は巨大権力そのものと見なされるが、当時のパソコンは『巨大権力への対抗手段』という解放の物語をまとっていた。"
+    },
+    {
+      "id": "pc_industry_1980s",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 12-14" }],
+      "themes": ["経済", "技術"],
+      "domain": "technology",
+      "region": "アメリカ・世界",
+      "period": { "start": "1981", "end": "1995" },
+      "title": "IBM PC とマイクロソフトによる『水平分業・互換機』モデルの支配",
+      "summary": "1981年の IBM PC 以降、ハード（多数の互換機メーカー）とOS（マイクロソフト）とCPU（インテル）が分離した水平分業モデルが市場を席巻し、Apple の垂直統合は少数派になった。1990年代半ばに Apple のシェアは一桁台に落ち込んだ。",
+      "relevance_to_subject": "ジョブズが1985年に去り、1997年に戻るまでの Apple 低迷の構造的背景。復帰後も彼は垂直統合を捨てず、それが iPod/iPhone で強みに転じた。",
+      "contrast_with_today": "当時『閉じた統合』は時代遅れとされたが、スマートフォン時代には統合とエコシステム管理が競争優位の中心になった。"
+    },
+    {
+      "id": "internet_mobile_2000s",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 30-38" }],
+      "themes": ["技術", "社会"],
+      "domain": "technology",
+      "region": "世界",
+      "period": { "start": "1999", "end": "2011" },
+      "title": "ブロードバンド・音楽のデジタル流通・携帯電話の高機能化",
+      "summary": "Napster 以降の音楽産業の混乱、常時接続の普及、フィーチャーフォンの限界（貧弱なブラウザ・キャリア主導のUI）という状況があった。",
+      "relevance_to_subject": "iTunes Store（2003）はレコード会社を説得して合法配信の枠組みを作った。iPhone（2007）はキャリアが握っていた端末体験の主導権をメーカー側へ移した。",
+      "contrast_with_today": "当時は通信キャリアが端末仕様とサービスを統制しており、メーカーが主導権を握る現在の構図は自明ではなかった。"
+    }
+  ]
+}

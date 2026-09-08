@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schemas/philosophy.schema.json",
+  "character": "albert_einstein",
+  "views": [
+    {
+      "id": "curiosity_over_talent",
+      "reliability": "primary",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 1（本人書簡の引用）" }],
+      "themes": ["好奇心", "才能", "努力"],
+      "domain": "success",
+      "title": "特別な才能はない、あるのは執拗な好奇心だけ",
+      "view": "自分は頭が良いのではなく、問題により長く留まるだけだ、と繰り返し述べた。『私に特別な才能はない。ただ情熱的に好奇心が強いだけだ』（1952年の書簡）。",
+      "elaboration": "難問を前にしたとき、多くの人が早く手を離すところを、彼は何年も同じ問いに滞在した（一般相対論に8年、統一場理論に30年）。",
+      "evidence": "自伝的覚書、私信。",
+      "quote_ids": ["not_stop_questioning"],
+      "tensions": "同じ『離さない』性質が、量子力学への反対では前進を妨げた。"
+    },
+    {
+      "id": "thought_experiments",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "autobiographical_notes_1949" }, { "source_id": "pais_1982" }],
+      "themes": ["方法", "創造性", "科学"],
+      "domain": "science",
+      "title": "実験室より先に、頭の中で世界を走らせる",
+      "view": "16歳のとき『光を光速で追いかけたら光はどう見えるか』を想像したのが特殊相対論の種になった。理論は感覚データの寄せ集めではなく、自由な概念の発明であり、それを経験で検証するものだと考えた。",
+      "elaboration": "落下するエレベーター、加速する箱、時計を積んだ列車——直観に反する結論を思考実験で先に掴み、後から数学で固めた。",
+      "evidence": "自伝的覚書、1933年の方法論講演。",
+      "statement_ids": ["on_education_1936"],
+      "quote_ids": ["imagination_more_important"]
+    },
+    {
+      "id": "nature_is_simple",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "ideas_and_opinions_1954", "locator": "\"On the Method of Theoretical Physics\"" }],
+      "themes": ["科学", "単純さ", "美"],
+      "domain": "science",
+      "title": "自然は把握可能で、根底は単純だという信念",
+      "view": "『神は老獪だが悪意はない』。世界は理解できるように出来ており、正しい理論は必要な仮定が少なく美しいはずだ、という美的・形而上的な確信を判断基準にした。",
+      "elaboration": "この信念が一般相対論を導いた一方、量子力学の非決定性を『醜い、未完成』と退ける根拠にもなった。",
+      "evidence": "1933年講演、ボルンとの書簡。",
+      "quote_ids": ["as_simple_as_possible", "god_does_not_play_dice"],
+      "tensions": "美的信念は発見の羅針盤にも、反証への抵抗にもなった。"
+    },
+    {
+      "id": "authority_and_independence",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 2" }, { "source_id": "world_as_i_see_it_1934" }],
+      "themes": ["権威", "自立", "常識"],
+      "domain": "convention",
+      "title": "権威への不服従こそが自分の性格を作った",
+      "view": "『権威を無批判に敬う態度は、真理の最大の敵だ』。少年期の軍隊式教育への反発、国家主義への嫌悪、学界の作法への無頓着が一貫している。",
+      "elaboration": "服装や儀礼を軽んじ、肩書きで人を測らなかった。一方で、この気質が就職難や敵を生んだ面もある。",
+      "evidence": "1901年の書簡、随筆『私の見た世界』。",
+      "statement_ids": ["on_education_1936"]
+    },
+    {
+      "id": "science_and_responsibility",
+      "reliability": "primary",
+      "sources": [{ "source_id": "ideas_and_opinions_1954" }],
+      "themes": ["科学と責任", "平和", "倫理"],
+      "domain": "society",
+      "title": "科学者は成果の使われ方から目を背けてはならない",
+      "view": "『方程式は政治より長く残るが、方程式が何のために使われるかを問うのは我々の責任だ』という趣旨を繰り返した。原爆後は、科学的知性と道徳的成熟の乖離を最大の危険と見なした。",
+      "elaboration": "1930年代の絶対平和主義から、ナチスに対しては防衛を認める立場へ修正し、戦後は核の国際管理を訴えた——状況に応じて立場を変えることを恥じなかった。",
+      "evidence": "ラッセル＝アインシュタイン宣言、各種公開書簡。",
+      "statement_ids": ["russell_einstein_manifesto_1955", "why_socialism_1949"],
+      "evolution": "平和主義 → 対ナチス限定的軍備容認（1933）→ 核軍縮運動（戦後）。"
+    },
+    {
+      "id": "simple_life",
+      "reliability": "primary",
+      "sources": [{ "source_id": "world_as_i_see_it_1934" }],
+      "themes": ["お金", "幸福", "生き方"],
+      "domain": "money",
+      "title": "所有・贅沢・名声を人生の目的にしない",
+      "view": "『安楽と幸福を人生の目的とする倫理を、私は豚の理想と呼ぶ』。簡素な暮らし、孤独、そして没頭できる仕事があれば十分だとした。",
+      "elaboration": "有名になった後も服や住まいに無頓着で、講演料や賞金の多くを寄付や家族への送金に充てた。ただし研究に必要な自由（時間・静けさ・地位）は強く求めた。",
+      "evidence": "随筆『私の見た世界』。",
+      "tensions": "『金に無関心』と言いつつ、プリンストンの好条件（高給と無義務）は受け入れた。"
+    },
+    {
+      "id": "on_failure_and_error",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 14, 17" }],
+      "themes": ["失敗", "研究", "誠実さ"],
+      "domain": "failure",
+      "title": "誤りを公に撤回することを恐れない",
+      "view": "一般相対論の完成前、彼は誤った場の方程式を何度も発表しては訂正した。宇宙項も後に放棄した。仮説は捨てられるためにある、というのが基本姿勢だった。",
+      "elaboration": "他方、量子力学については『いつか隠れた変数が見つかる』という期待を最後まで手放さなかった——誤りを認める柔軟さと、信念への固執が同居していた。",
+      "evidence": "1915年の一連の論文と訂正、宇宙項の撤回。",
+      "tensions": "『理論は捨てられる』という原則を、自分の最も強い直観には適用しきれなかった。"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "failures.schema.json",
+  "title": "失敗・挫折・判断ミス・対立（spec §4）",
+  "description": "偉人を完璧な人物として扱わないための記録。相談時に「この人物も過去にこう失敗している」と使える。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "business",
+                  "political",
+                  "research",
+                  "personal",
+                  "judgment",
+                  "relationship",
+                  "leadership",
+                  "ethical",
+                  "youth",
+                  "late_life",
+                  "public_criticism",
+                  "other"
+                ]
+              },
+              "year": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "year_range": {
+                "$ref": "common.schema.json#/$defs/dateRange"
+              },
+              "what_happened": {
+                "type": "string"
+              },
+              "context": {
+                "type": "string",
+                "description": "背景・当時の状況"
+              },
+              "his_role": {
+                "type": "string",
+                "description": "本人の関与・判断・行動"
+              },
+              "criticism": {
+                "type": "string",
+                "description": "どう批判されたか、誰から"
+              },
+              "consequence": {
+                "type": "string",
+                "description": "結果・代償"
+              },
+              "recovery": {
+                "type": "string",
+                "description": "どう立て直したか、あるいは立て直せなかったか"
+              },
+              "lesson": {
+                "type": "string",
+                "description": "本人が語った教訓、または後世の解釈（どちらかを notes/sources で区別）"
+              },
+              "related_people": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "quote_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              }
+            },
+            "required": [
+              "title",
+              "what_happened"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "failures"
+  ],
+  "additionalProperties": false
+}

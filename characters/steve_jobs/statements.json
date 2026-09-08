@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schemas/statements.schema.json",
+  "character": "steve_jobs",
+  "statements": [
+    {
+      "id": "stanford_commencement_2005",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005" }],
+      "themes": ["生き方", "死生観", "キャリア", "教育"],
+      "title": "スタンフォード大学 卒業式スピーチ",
+      "type": "speech",
+      "date": "2005-06-12",
+      "place": "スタンフォード大学",
+      "audience": "2005年度卒業生",
+      "medium": "式辞（Stanford が全文・映像を公開）",
+      "language": "en",
+      "excerpt": "Your time is limited, so don't waste it living someone else's life. ... Stay hungry. Stay foolish.",
+      "translation": "時間は限られている。他人の人生を生きて無駄にするな。（中略）ハングリーであれ。愚か者であれ。",
+      "summary": "3つの話。(1) 点と点は後でつながる（中退とカリグラフィ）。(2) 愛と喪失（Apple 解任と再起）。(3) 死（がん体験と、死を意識して生きること）。",
+      "topics": ["キャリア観", "失敗の再評価", "死生観"]
+    },
+    {
+      "id": "playboy_interview_1985",
+      "reliability": "primary",
+      "sources": [{ "source_id": "playboy_1985" }],
+      "themes": ["プロダクト", "野心", "テクノロジー観"],
+      "title": "Playboy インタビュー",
+      "type": "interview",
+      "date": "1985-02",
+      "audience": "一般読者",
+      "medium": "Playboy 誌",
+      "language": "en",
+      "excerpt": "The problem is, in hardware you can't build a computer that's twice as good as anyone else's anymore. ... The Macintosh ... is the computer for the rest of us.",
+      "translation": "問題は、ハードだけで他社の2倍良いコンピュータはもう作れないということだ。（中略）Macintosh は『それ以外の私たち』のためのコンピュータだ。",
+      "summary": "Apple 解任直前期。コンピュータの大衆化への確信、ハードだけでの差別化の限界、若い頃の思想（東洋思想・LSD 体験への言及）を語る。",
+      "topics": ["コンピュータの大衆化", "差別化の源泉", "自己形成"]
+    },
+    {
+      "id": "d8_interview_2010",
+      "reliability": "primary",
+      "sources": [{ "source_id": "d8_2010" }],
+      "themes": ["戦略", "集中", "顧客", "組織"],
+      "title": "All Things Digital D8 ステージ対談",
+      "type": "interview",
+      "date": "2010-06-01",
+      "place": "カリフォルニア州ランチョパロスヴェルデス",
+      "audience": "業界関係者",
+      "medium": "カンファレンス対談（書き起こし・映像あり）",
+      "language": "en",
+      "excerpt": "Apple is a company that doesn't have the most resources ... The way we've succeeded is by choosing what horses to ride very carefully.",
+      "translation": "Apple は最も資源が豊富な会社ではない。（中略）我々が成功してきたのは、どの馬に乗るかを極めて慎重に選んできたからだ。",
+      "summary": "iPad 発売直後。集中戦略、事業部制を採らない理由（機能別組織）、Flash 非採用の理由、報道機関との関係などを語る。",
+      "topics": ["選択と集中", "機能別組織", "プラットフォーム戦略"]
+    }
+  ]
+}

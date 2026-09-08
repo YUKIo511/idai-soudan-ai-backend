@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schemas/quotes.schema.json",
+  "character": "albert_einstein",
+  "quotes": [
+    {
+      "id": "imagination_more_important",
+      "reliability": "primary",
+      "sources": [{ "source_id": "viereck_1929" }],
+      "themes": ["創造性", "知識", "教育"],
+      "text": {
+        "original": "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.",
+        "original_lang": "en",
+        "ja": "想像力は知識より重要だ。知識には限りがあるが、想像力は世界のすべてを包み、進歩を促し、進化を生む。",
+        "en": "Imagination is more important than knowledge."
+      },
+      "attribution_status": "verified",
+      "said_on": "1929",
+      "medium": "インタビュー（The Saturday Evening Post, G.S. ヴィーレック）",
+      "context": "『あなたは想像力に頼るのか、知識に頼るのか』という問いへの答え。",
+      "background": "しばしば前半だけが切り取られるが、本人は『知識には限りがある』という理由づけとセットで語っている。",
+      "meaning": "既知の組み替えでは飛躍は生まれない。問いを立て直す力が先に立つ、という趣旨。",
+      "relation_to_thought": "思考実験を出発点にする彼の方法と直結する。"
+    },
+    {
+      "id": "god_does_not_play_dice",
+      "reliability": "primary",
+      "sources": [{ "source_id": "born_letters", "quote": "Jedenfalls bin ich überzeugt, daß der Alte nicht würfelt." }],
+      "themes": ["物理", "世界観", "決定論"],
+      "text": {
+        "original": "Jedenfalls bin ich überzeugt, daß der Alte nicht würfelt.",
+        "original_lang": "de",
+        "ja": "いずれにせよ私は、『あの老人（神）』がサイコロを振らないと確信している。",
+        "en": "In any case I am convinced that He does not play dice."
+      },
+      "attribution_status": "verified",
+      "said_on": "1926-12-04",
+      "audience": "マックス・ボルン（往復書簡）",
+      "medium": "私信",
+      "context": "量子力学の確率的解釈をめぐる論争の中で。",
+      "background": "『神はサイコロを振らない（God does not play dice）』という短縮形で広まったが、原文は書簡のドイツ語で、繰り返し似た言い回しを用いた。",
+      "meaning": "自然の根底には客観的で決定論的な秩序があるはずだ、という信念の表明。",
+      "relation_to_thought": "量子力学への生涯の反対（[[quantum_mechanics_opposition]]）の核心。ボーアは『神が何をするか指図するな』と応じたと伝わる。",
+      "variants": ["God does not play dice with the universe."]
+    },
+    {
+      "id": "not_stop_questioning",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 1（LIFE誌 1955年の引用に言及）" }],
+      "themes": ["探究", "教育", "好奇心"],
+      "text": {
+        "original": "The important thing is not to stop questioning. Curiosity has its own reason for existing.",
+        "original_lang": "en",
+        "ja": "大切なのは、問い続けることをやめないことだ。好奇心にはそれ自体に存在する理由がある。",
+        "en": "The important thing is not to stop questioning."
+      },
+      "attribution_status": "likely",
+      "said_on": "1955",
+      "medium": "ウィリアム・ミラーへの談話（LIFE誌, 1955年5月2日号で紹介）",
+      "context": "晩年、若い友人に語ったとされる言葉。",
+      "background": "逐語の一次記録は乏しく、回想としての記録。趣旨は本人の他の発言と整合する。",
+      "meaning": "答えを持つことより、問いを手放さないことに価値を置く。",
+      "relation_to_thought": "『私は特別な才能はない。ただ情熱的に好奇心が強いだけだ』という自己評価と対になる。"
+    },
+    {
+      "id": "as_simple_as_possible",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "ideas_and_opinions_1954", "locator": "\"On the Method of Theoretical Physics\" (1933 ハーバート・スペンサー講演)" }],
+      "themes": ["科学", "単純さ", "方法"],
+      "text": {
+        "original": "It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience.",
+        "original_lang": "en",
+        "ja": "あらゆる理論の最高の目標は、経験上の事実を一つも取りこぼさずに、還元不能な基本要素をできるだけ単純に、できるだけ少なくすることだ——これはほとんど否定しようがない。",
+        "en": "…make the basic elements as simple and as few as possible without surrendering the adequate representation of experience."
+      },
+      "attribution_status": "disputed",
+      "said_on": "1933",
+      "medium": "講演（オックスフォード、ハーバート・スペンサー記念講演）",
+      "context": "理論物理学の方法について。",
+      "background": "『Everything should be made as simple as possible, but not simpler.』という有名な短縮版は、本人のこの一節の後世の言い換えで、本人がその形で述べた記録はない。",
+      "meaning": "単純化は目的だが、事実の説明力を犠牲にしてはならない。",
+      "relation_to_thought": "『自然は把握可能で単純だ』という信念。ただし引用する際は短縮版を本人の言葉として扱わない。"
+    },
+    {
+      "id": "insanity_repetition_misattrib",
+      "reliability": "legend",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 1（誤帰属の言及なし・一般的整理）" }],
+      "themes": ["誤帰属"],
+      "text": {
+        "original": "Insanity is doing the same thing over and over again and expecting different results.",
+        "original_lang": "en",
+        "ja": "狂気とは、同じことを繰り返しながら違う結果を期待することだ。",
+        "en": "Insanity is doing the same thing over and over and expecting different results."
+      },
+      "attribution_status": "misattributed",
+      "background": "アインシュタインの言葉として広く流布するが、一次資料は存在しない。1980年代の依存症自助グループの文書や、作家リタ・メイ・ブラウンの小説（1983）に近い表現があり、そちらが出所と考えられている。",
+      "meaning": "方法を変えずに結果だけ変わることを期待する愚かさ、という警句として使われる。",
+      "relation_to_thought": "彼の科学観（前提を疑え）と親和的に見えるため貼り付けられたと考えられる。回答では本人の言葉として引用しない。"
+    },
+    {
+      "id": "compound_interest_apocryphal",
+      "reliability": "legend",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "（一般的整理）" }],
+      "themes": ["誤帰属", "お金"],
+      "text": {
+        "original": "Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it.",
+        "original_lang": "en",
+        "ja": "複利は世界の八番目の不思議だ。理解する者はそれで稼ぎ、理解しない者はそれを払う。",
+        "en": "Compound interest is the eighth wonder of the world."
+      },
+      "attribution_status": "apocryphal",
+      "background": "アインシュタインに帰属されることが多いが、確認できる出典はない。金融広告の文句として20世紀半ばから広まった。",
+      "meaning": "複利の力を強調する常套句。",
+      "relation_to_thought": "本人が資産運用や金融について語った記録はほとんどない。本人の言葉として使わない。"
+    }
+  ]
+}

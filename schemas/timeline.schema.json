@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "timeline.schema.json",
+  "title": "人生年表（spec §2）",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "date": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "date_end": {
+                "$ref": "common.schema.json#/$defs/partialDate",
+                "description": "期間のある出来事の終了"
+              },
+              "age": {
+                "type": "integer",
+                "description": "当時の年齢（概算可、approxで示す）"
+              },
+              "phase": {
+                "type": "string",
+                "enum": [
+                  "birth",
+                  "childhood",
+                  "education",
+                  "early_career",
+                  "turning_point",
+                  "encounter",
+                  "rise",
+                  "peak",
+                  "setback",
+                  "late_life",
+                  "death",
+                  "posthumous"
+                ],
+                "description": "出生→幼少期→学生時代→最初の仕事→転機→出会い→成功→失敗→晩年→死去→没後"
+              },
+              "place": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string",
+                "description": "出来事の見出し"
+              },
+              "event": {
+                "type": "string",
+                "description": "何が起きたか"
+              },
+              "background": {
+                "type": "string",
+                "description": "背景"
+              },
+              "cause": {
+                "type": "string",
+                "description": "原因"
+              },
+              "his_action": {
+                "type": "string",
+                "description": "本人の行動"
+              },
+              "his_words": {
+                "type": "string",
+                "description": "本人の発言（逐語。確実性の管理が要るものは quote_ids へ）"
+              },
+              "quote_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                },
+                "description": "quotes.json の id"
+              },
+              "result": {
+                "type": "string",
+                "description": "結果"
+              },
+              "related_people": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "historical_significance": {
+                "type": "string",
+                "description": "歴史的な意味"
+              }
+            },
+            "required": [
+              "title",
+              "event"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "events"
+  ],
+  "additionalProperties": false
+}

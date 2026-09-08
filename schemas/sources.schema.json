@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sources.schema.json",
+  "title": "出典マスター（spec: 情報の信頼性）",
+  "description": "この偉人の全ファイルが source_id で参照する出典の一覧。事実を書く前にまず出典をここへ登録する。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/localId"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "book",
+              "academic_paper",
+              "news_article",
+              "interview",
+              "speech",
+              "documentary",
+              "archive",
+              "letter",
+              "diary",
+              "autobiography",
+              "official_record",
+              "website",
+              "encyclopedia",
+              "other"
+            ]
+          },
+          "tier": {
+            "$ref": "common.schema.json#/$defs/sourceTier"
+          },
+          "title": {
+            "type": "string"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "year": {
+            "$ref": "common.schema.json#/$defs/partialDate"
+          },
+          "isbn": {
+            "type": "string"
+          },
+          "doi": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "language": {
+            "type": "string",
+            "description": "BCP47"
+          },
+          "is_primary_source": {
+            "type": "boolean",
+            "description": "本人自身による記録・発言か"
+          },
+          "reliability_note": {
+            "type": "string",
+            "description": "この資料の限界・バイアス・立場"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "tier",
+          "title"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "character",
+    "sources"
+  ],
+  "additionalProperties": false
+}

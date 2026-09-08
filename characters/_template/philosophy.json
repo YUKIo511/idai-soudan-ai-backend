@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/philosophy.schema.json",
+  "character": "REPLACE_ME",
+  "views": [
+    {
+      "id": "example_view",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "domain": "work",
+      "title": "",
+      "view": "",
+      "elaboration": "",
+      "evidence": "",
+      "quote_ids": [],
+      "statement_ids": [],
+      "tensions": "",
+      "evolution": ""
+    }
+  ]
+}

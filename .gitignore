@@ -1,0 +1,27 @@
+# 生成物（再構築可能）
+.chroma/
+characters/*/knowledge/chunks.jsonl
+
+# .vectorstore/ は本番(Railway)へ同梱する（fake embedding で決定論的・約1MB・3人分）。
+# 起動時に不足分は自動再構築されるが、同梱すればコールドスタートが速い。
+# .vectorstore/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# 秘密情報（絶対にコミットしない）
+.env
+.env.*
+!.env.example
+
+# モバイルアプリは独立した git リポジトリ（mobile/.git）。
+# バックエンド(Railway)のデプロイ対象に含めない。EAS ビルドは mobile/ 側で行う。
+mobile/
+
+# OS / エディタ
+.DS_Store

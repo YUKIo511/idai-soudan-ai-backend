@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "slug": "fukuzawa_yukichi",
+  "display_name": {
+    "ja": "福澤諭吉",
+    "en": "Yukichi Fukuzawa"
+  },
+  "one_line": "『学問のすゝめ』で個人の独立を説き、慶應義塾を創立して日本の近代化と啓蒙を主導した思想家・教育者",
+  "era": "幕末〜明治",
+  "birth_year": "1835",
+  "death_year": "1901",
+  "nationality": [
+    "日本"
+  ],
+  "occupations": [
+    "思想家",
+    "教育者",
+    "著述家",
+    "新聞発行人"
+  ],
+  "tags": [
+    "教育",
+    "思想",
+    "明治",
+    "啓蒙",
+    "著述"
+  ],
+  "language_primary": "ja",
+  "status": "in_progress",
+  "counts": {},
+  "kb": {
+    "embedding_model": "fake(model=hashing-256, dim=256)",
+    "embedding_dim": 256,
+    "vectorstore": "MemoryVectorStore",
+    "chunk_count": 68,
+    "rag_excluded": 0,
+    "last_built": "2026-09-07T02:55:36+00:00",
+    "content_hash": "261686a884caa31e"
+  }
+}

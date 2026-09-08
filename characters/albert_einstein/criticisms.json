@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schemas/criticisms.schema.json",
+  "character": "albert_einstein",
+  "items": [
+    {
+      "id": "quantum_wrong_side",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "pais_1982", "locator": "part VII" }],
+      "themes": ["研究", "評価"],
+      "kind": "modern_criticism",
+      "title": "量子力学論争で『負けた側』に立ち続けた",
+      "claim": "1920年代後半以降、アインシュタインは量子力学の主流解釈に反対し、生産的な物理から距離を置いた。晩年の統一場理論はほぼ成果を残さなかった。",
+      "by_whom": "多くの物理学者・物理史家（パイスら）",
+      "when": "1930",
+      "basis": "ソルベー会議でのボーアとの論争、EPR 論文への主流の反応、統一場理論の30年の不成功。",
+      "rebuttal": "EPR の問いはベルの定理と量子もつれ実験を生み、量子情報科学の出発点になった。『良い問いは、答えを外しても実る』という評価もある。",
+      "status": "widely_accepted",
+      "significance": "強い直観が発見の原動力にも足枷にもなる、という科学者論の定番の題材。"
+    },
+    {
+      "id": "personal_coldness",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 9, 13, 18" }],
+      "themes": ["家族", "倫理"],
+      "kind": "modern_criticism",
+      "title": "私生活での冷淡さ・家父長的な振る舞い",
+      "claim": "人類愛と平等を説く一方、最初の妻には屈辱的な『条件書き』を渡し、病気の次男とは晩年会わず、婚外関係も複数あった。",
+      "by_whom": "伝記著者、フェミニズム的な再検討",
+      "basis": "本人の書簡（『条件書き』を含む）、家族の記録。",
+      "rebuttal": "本人も『私は個人としてより人類の一員として生きてきた』と限界を認めていた。時代の家族観という文脈もある（ただし免罪にはならない）。",
+      "status": "widely_accepted",
+      "significance": "公的な理想と私的な振る舞いの乖離という、偉人一般に問われる論点。"
+    },
+    {
+      "id": "mileva_contribution_debate",
+      "reliability": "uncertain",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 3" }],
+      "themes": ["評価", "ジェンダー"],
+      "kind": "controversy",
+      "title": "1905年の業績にミレヴァはどれだけ関与したか",
+      "claim": "一部の論者は、ミレヴァ・マリッチが特殊相対論を含む初期の仕事に実質的に貢献した（あるいは共著者であるべきだった）と主張する。",
+      "by_whom": "一部の科学史家・ジャーナリズム（1990年代以降）",
+      "basis": "恋文に研究の話が出てくること、共同で作業したという伝聞。",
+      "rebuttal": "多数派の科学史家は、彼女が議論相手・計算の手伝いをした可能性は認めつつ、独自の理論的寄与を示す一次資料は無いとする。過小評価と過大評価の両方が起きている。",
+      "status": "contested",
+      "significance": "史料が乏しいテーマで、断定を避けて『分かっていること／いないこと』を分ける必要がある実例。"
+    },
+    {
+      "id": "fame_and_pronouncements",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 20" }],
+      "themes": ["評価", "社会"],
+      "kind": "contemporary_criticism",
+      "title": "専門外の問題に発言しすぎるという批判",
+      "claim": "物理学者が政治・宗教・教育・経済にまで見解を述べることに、当時から『権威の乱用』という批判があった。FBI は長大な監視ファイルを作成した。",
+      "by_whom": "同時代の一部の政治家・報道、FBI",
+      "when": "1940",
+      "basis": "『なぜ社会主義か』などの政治的発言、平和運動への関与。",
+      "rebuttal": "アインシュタイン自身は、名声を持つ者が公的発言をしないことこそ怠慢だと考えた。科学者の社会参加のモデルになったという評価もある。",
+      "status": "contested",
+      "significance": "『専門家は専門の外で語るべきか』という、現代にも続く論点。"
+    }
+  ]
+}

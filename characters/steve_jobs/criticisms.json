@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schemas/criticisms.schema.json",
+  "character": "steve_jobs",
+  "items": [
+    {
+      "id": "management_cruelty",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 25" }, { "source_id": "becoming_2015" }],
+      "themes": ["リーダーシップ", "人間関係", "倫理"],
+      "kind": "modern_criticism",
+      "title": "経営手法の苛烈さ・人格的な問題",
+      "claim": "部下を公然と罵倒し泣かせる、功績を横取りする、規範を軽視する（障害者用駐車枠の常用、車のナンバープレート未装着など）といった振る舞いが常態化していた。",
+      "by_whom": "多数の元従業員、複数の伝記著者",
+      "when": "2011",
+      "basis": "独立した多数の証言、Isaacson の記述、本人も一部を否定していない。",
+      "rebuttal": "Schlender らは、これを『若い頃の未熟さ』とし、NeXT・Pixar 期を経て他者に任せられる経営者へ変わったと主張する。また、極端な要求が並外れた成果を引き出した面もあるとされる。",
+      "status": "widely_accepted",
+      "significance": "『偉大な成果を出せば人格的問題は免責されるのか』という、リーダーシップ論の定番の論点として引かれる。"
+    },
+    {
+      "id": "innovator_not_inventor",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 10" }],
+      "themes": ["イノベーション", "評価"],
+      "kind": "modern_criticism",
+      "title": "『発明家』ではなく『統合者・編集者』だという評価",
+      "claim": "GUI はゼロックス PARC、CPU 設計はウォズニアック、CG技術は Pixar のキャットマルら、といったように、要素技術は他者のもの。ジョブズの貢献は選択・統合・意味づけと売り方にある。",
+      "by_whom": "技術史家、一部の同時代の技術者",
+      "basis": "PARC 訪問、ウォズニアックの役割、Pixar の技術陣の存在。",
+      "rebuttal": "『既存の断片を人々が使える製品へ翻訳する』こと自体が希少な能力であり、彼はそれを繰り返し成功させた。240件超の特許に発明者として名を連ねてもいる（多くは共同・意匠）。",
+      "status": "contested",
+      "significance": "『イノベーション』とは何を指すのかの定義問題。"
+    },
+    {
+      "id": "labor_and_supply_chain",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 35" }],
+      "themes": ["倫理", "経済"],
+      "kind": "ethical_issue",
+      "title": "サプライチェーンの労働環境と社会貢献の乏しさ",
+      "claim": "中国の受託製造（Foxconn 等）の労働環境が批判された。またジョブズは存命中、目立った慈善活動をほとんど公表しなかった。",
+      "by_whom": "労働団体、報道、慈善活動をめぐる論者",
+      "when": "2010",
+      "basis": "2010年前後の Foxconn をめぐる報道。ジョブズが Apple 復帰後に社の慈善プログラムを一時停止したこと。",
+      "rebuttal": "労働環境は業界全体の構造問題でもあり、Apple はのちに監査と是正を進めた。慈善については妻ローリーンが大規模な活動を行っており、非公表の寄付の存在も示唆される。",
+      "status": "contested",
+      "significance": "製品の美しさと、それを支える生産・分配の倫理をどう両立させるかという問い。"
+    },
+    {
+      "id": "posthumous_reassessment",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "becoming_2015" }],
+      "themes": ["評価", "リーダーシップ"],
+      "kind": "reassessment",
+      "title": "没後の人物像をめぐる論争",
+      "claim": "Isaacson 版（2011）は『天才だが冷酷』という像を広めた。Schlender & Tetzeli 版（2015）は、それが特に若年期に偏った描写で、成熟の物語を取りこぼしていると反論した。",
+      "by_whom": "ブレント・シュレンダー、リック・テッツェリ、および Apple 内部関係者（クック、アイブ）",
+      "when": "2015",
+      "basis": "Isaacson 版の構成への批判、関係者の追加証言。",
+      "rebuttal": "Isaacson 版も後半で変化を描いており、対立は程度問題との見方もある。",
+      "status": "contested",
+      "significance": "同一人物でも、依拠する資料と時期の取り方で像が大きく変わる、という史料批判の実例。回答時は両論を踏まえる。"
+    }
+  ]
+}

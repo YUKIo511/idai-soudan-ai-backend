@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/quotes.schema.json",
+  "character": "REPLACE_ME",
+  "quotes": [
+    {
+      "id": "example_quote",
+      "reliability": "primary",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "text": { "ja": "", "en": "", "original": "", "original_lang": "" },
+      "attribution_status": "verified",
+      "said_on": "",
+      "said_at": "",
+      "audience": "",
+      "context": "",
+      "background": "",
+      "medium": "",
+      "first_appearance": "",
+      "meaning": "",
+      "relation_to_thought": "",
+      "variants": [],
+      "statement_id": ""
+    }
+  ]
+}

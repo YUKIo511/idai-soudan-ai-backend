@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/achievements.schema.json",
+  "character": "REPLACE_ME",
+  "achievements": [
+    {
+      "id": "example_achievement",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "title": "",
+      "category": "idea",
+      "year": "",
+      "place": "",
+      "what": "",
+      "why": "",
+      "how": "",
+      "difficulties": "",
+      "outcome": "",
+      "impact_contemporary": "",
+      "impact_legacy": "",
+      "collaborators": [],
+      "work_ids": [],
+      "quote_ids": []
+    }
+  ]
+}

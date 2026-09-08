@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relationships.schema.json",
+  "title": "人間関係（spec §9）",
+  "description": "重要人物ごとに1エントリ。誰と / どのような関係で / いつ / 何があったか を記録。相手も偉人DBにいる場合は person_slug で結ぶ。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "$ref": "common.schema.json#/$defs/localizedText"
+              },
+              "person_slug": {
+                "$ref": "common.schema.json#/$defs/slug",
+                "description": "相手も偉人DBにいる場合"
+              },
+              "relation_type": {
+                "type": "string",
+                "enum": [
+                  "parent",
+                  "sibling",
+                  "spouse",
+                  "partner",
+                  "child",
+                  "mentor",
+                  "student",
+                  "friend",
+                  "rival",
+                  "boss",
+                  "subordinate",
+                  "cofounder",
+                  "colleague",
+                  "patron",
+                  "opponent",
+                  "collaborator",
+                  "other"
+                ]
+              },
+              "relation_label": {
+                "type": "string",
+                "description": "自由記述の関係名（例: 共同創業者にして技術面の相棒）"
+              },
+              "period": {
+                "$ref": "common.schema.json#/$defs/dateRange"
+              },
+              "how_they_met": {
+                "type": "string"
+              },
+              "dynamic": {
+                "type": "string",
+                "description": "どのような関係だったか（力学・親密さ・対立）"
+              },
+              "key_events": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "$ref": "common.schema.json#/$defs/partialDate"
+                    },
+                    "event": {
+                      "type": "string"
+                    },
+                    "outcome": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "event"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "influence_on_subject": {
+                "type": "string",
+                "description": "この人物が本人に与えた影響"
+              },
+              "influence_on_other": {
+                "type": "string",
+                "description": "本人がこの人物に与えた影響"
+              },
+              "episode_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              }
+            },
+            "required": [
+              "name",
+              "relation_type"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "people"
+  ],
+  "additionalProperties": false
+}

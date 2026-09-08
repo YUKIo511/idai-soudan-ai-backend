@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schemas/relationships.schema.json",
+  "character": "steve_jobs",
+  "people": [
+    {
+      "id": "steve_wozniak",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 2, 5" }],
+      "themes": ["人間関係", "起業", "共同作業"],
+      "name": { "ja": "スティーブ・ウォズニアック", "en": "Steve Wozniak", "original": "Stephen Wozniak", "original_lang": "en" },
+      "relation_type": "cofounder",
+      "relation_label": "Apple 共同創業者。技術（設計）を担う相棒",
+      "period": { "start": "1971" },
+      "how_they_met": "共通の友人を通じて1971年に知り合う。5歳年上のウォズニアックの回路設計の腕にジョブズが惚れ込んだ。",
+      "dynamic": "ウォズニアックが設計、ジョブズが製品化・販売・値付けという分業。Atari のブロック崩し開発でジョブズが報酬額をウォズニアックに過少申告して分け前を減らした件など、初期から金銭をめぐる不均衡もあった。",
+      "key_events": [
+        { "date": "1975", "event": "ウォズニアックが Apple I の回路を設計、ジョブズが基板の販売を提案", "outcome": "1976年の Apple 設立へ" },
+        { "date": "1976", "event": "ジョブズが Apple I を1台500ドルで地元店に売り込む", "outcome": "最初の受注50台" }
+      ],
+      "influence_on_subject": "『技術を製品に翻訳する』という自分の役回りを definの形で確立させた相手。",
+      "influence_on_other": "ウォズニアックの発明を世に出す推進力になった。一方で報酬配分や役割評価をめぐる不満も残した。"
+    },
+    {
+      "id": "john_sculley",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 9, 12" }],
+      "themes": ["人間関係", "対立", "リーダーシップ", "失敗"],
+      "name": { "ja": "ジョン・スカリー", "en": "John Sculley", "original": "John Sculley", "original_lang": "en" },
+      "relation_type": "opponent",
+      "relation_label": "自ら招いた CEO。のちに経営権を争い敗れた相手",
+      "period": { "start": "1983", "end": "1993" },
+      "how_they_met": "1983年、ジョブズがペプシ社長のスカリーを『一生砂糖水を売り続けるのか、それとも世界を変えるのか』と口説いて Apple CEO に招いた。",
+      "dynamic": "当初は蜜月（『二人で一つの脳』とまで言われた）だったが、Macintosh 不振後に主導権を争い、1985年に取締役会がスカリーを支持。ジョブズは実権を失い辞任した。",
+      "key_events": [
+        { "date": "1983", "event": "スカリー、Apple CEO 就任", "outcome": "ジョブズと共同統治" },
+        { "date": "1985-05", "event": "ジョブズがスカリー解任を画策、露見", "outcome": "取締役会がスカリー支持、ジョブズ失脚" }
+      ],
+      "influence_on_subject": "『信頼して招いた相手に敗れる』経験。復帰後、執行トップを立てつつ製品の最終権限は自分が握る体制設計につながった。",
+      "influence_on_other": "スカリーは後年『ジョブズを追い出したのは誤りだった』と繰り返し述べている。"
+    },
+    {
+      "id": "jony_ive",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 24" }],
+      "themes": ["人間関係", "デザイン", "共同作業"],
+      "name": { "ja": "ジョナサン・アイブ", "en": "Jony Ive", "original": "Jonathan Ive", "original_lang": "en" },
+      "relation_type": "collaborator",
+      "relation_label": "デザイン部門トップ。復帰後の製品の造形を共同で決めた盟友",
+      "period": { "start": "1997", "end": "2011" },
+      "how_they_met": "ジョブズ復帰時、アイブは既に Apple のデザインチームにいて退社を考えていた。ジョブズが彼の思想に共鳴し引き止めた。",
+      "dynamic": "ほぼ毎日昼食を共にし、他部門より上位にデザインを位置づけた。iMac、iPod、iPhone、iPad の造形はこの二人の密な協働から生まれた。アイブは『スティーブは私のアイデアを自分のものとして語ることがある』と複雑な感情も吐露した。",
+      "key_events": [
+        { "date": "1998", "event": "半透明の iMac G3", "outcome": "Apple 復活の象徴、黒字化" }
+      ],
+      "influence_on_subject": "『テクノロジーとリベラルアーツの交差点』を製品として実現する手を得た。",
+      "influence_on_other": "アイブに社内で例外的な権限と地位を与えた。"
+    },
+    {
+      "id": "tim_cook",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 25, 41" }],
+      "themes": ["人間関係", "組織", "後継"],
+      "name": { "ja": "ティム・クック", "en": "Tim Cook", "original": "Timothy Cook", "original_lang": "en" },
+      "relation_type": "subordinate",
+      "relation_label": "オペレーション責任者、のちに後継 CEO",
+      "period": { "start": "1998", "end": "2011" },
+      "how_they_met": "1998年、コンパックから招かれ Apple の SVP（オペレーション）に。ジョブズが苦手な在庫・製造・物流を任せた。",
+      "dynamic": "対照的な気質（クックは冷静・寡黙・数値的）だが補完関係。ジョブズの闘病中は複数回 CEO 代行を務め、2011年8月に正式に後任となった。",
+      "key_events": [
+        { "date": "2004", "event": "ジョブズのがん手術中、クックが会社を運営", "outcome": "後継体制の実地テスト" },
+        { "date": "2011-08-24", "event": "ジョブズ CEO 辞任、クック昇格", "outcome": "計画的な承継" }
+      ],
+      "influence_on_subject": "自分の弱い領域を委ねられる相手を得たことで、製品に集中できた。",
+      "influence_on_other": "ジョブズは『私の決定を、私ならどうするかで判断するな』と言い残し、模倣ではなく自律を促した。"
+    },
+    {
+      "id": "paul_jobs",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 1" }],
+      "themes": ["家族", "生い立ち", "仕事観"],
+      "name": { "ja": "ポール・ジョブズ", "en": "Paul Jobs", "original": "Paul Reinhold Jobs", "original_lang": "en" },
+      "relation_type": "parent",
+      "relation_label": "養父。機械工",
+      "period": { "start": "1955", "end": "1993" },
+      "how_they_met": "1955年に養子縁組。",
+      "dynamic": "ガレージの作業台を半分与え、車の修理や電子工作を教えた。『裏側も、誰も見なくてもきちんと作れ』という職人倫理を繰り返し説いた。",
+      "key_events": [
+        { "date": "1968", "event": "12歳のジョブズがヒューレット社の W. ヒューレットに電話し部品を無心（父の後押しがあったとされる）", "outcome": "夏季のインターン" }
+      ],
+      "influence_on_subject": "『見えない部分の作り込み』という製品哲学の直接の源泉。ものづくりへの敬意を植えつけた。",
+      "influence_on_other": "—"
+    }
+  ]
+}

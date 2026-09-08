@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schemas/statements.schema.json",
+  "character": "albert_einstein",
+  "statements": [
+    {
+      "id": "why_socialism_1949",
+      "reliability": "primary",
+      "sources": [{ "source_id": "ideas_and_opinions_1954", "locator": "\"Why Socialism?\"" }],
+      "themes": ["社会", "経済", "政治"],
+      "title": "なぜ社会主義か（Why Socialism?）",
+      "type": "public_comment",
+      "date": "1949-05",
+      "medium": "Monthly Review 創刊号",
+      "language": "en",
+      "excerpt": "The economic anarchy of capitalist society as it exists today is, in my opinion, the real source of the evil. ... Production is carried on for profit, not for use.",
+      "translation": "今日の資本主義社会の経済的無秩序こそが、悪の真の源だと私は考える。生産は利用のためでなく利潤のために行われている。",
+      "summary": "私有資本の集中が政治権力を歪め、教育を萎縮させると論じ、計画経済と個人の権利を両立させる『社会主義』を擁護した。同時に、官僚の全能化という危険も明記している。",
+      "topics": ["資本主義批判", "計画経済", "個人の自由"]
+    },
+    {
+      "id": "the_world_as_i_see_it_1930",
+      "reliability": "primary",
+      "sources": [{ "source_id": "world_as_i_see_it_1934" }],
+      "themes": ["世界観", "死生観", "宗教"],
+      "title": "私の見た世界（Mein Weltbild / The World As I See It）",
+      "type": "book_excerpt",
+      "date": "1930",
+      "language": "de",
+      "excerpt": "The most beautiful experience we can have is the mysterious. ... A knowledge of the existence of something we cannot penetrate, of the manifestations of the profoundest reason and the most radiant beauty — it is this knowledge and this emotion that constitute true religiosity.",
+      "translation": "私たちが持ちうる最も美しい経験は、神秘に触れることだ。見通せない何かが存在すること、最も深い理性と最も輝く美の現れを知ること——この認識と感情こそが真の宗教性である。",
+      "summary": "人格神は信じないが、宇宙の合理的な秩序への畏敬を『宗教的』と呼ぶ（いわゆるスピノザの神）。名声・財産・贅沢を軽んじ、簡素と孤独と仕事を尊ぶと述べる。",
+      "topics": ["宇宙的宗教感情", "簡素な生活", "自由意志への懐疑"]
+    },
+    {
+      "id": "on_education_1936",
+      "reliability": "primary",
+      "sources": [{ "source_id": "ideas_and_opinions_1954", "locator": "\"On Education\" (ニューヨーク州教育局 300周年講演, 1936)" }],
+      "themes": ["教育"],
+      "title": "教育について（On Education）",
+      "type": "address",
+      "date": "1936-10",
+      "place": "オールバニ（ニューヨーク州）",
+      "language": "en",
+      "excerpt": "The aim must be the training of independently acting and thinking individuals who, however, see in the service of the community their highest life problem. ... Otherwise he — with his specialized knowledge — more closely resembles a well-trained dog than a harmoniously developed person.",
+      "translation": "目標は、自立して行動し考える個人を育てることでなければならない。ただしその個人は、共同体への奉仕を人生の最高の課題と見なす。さもなければ、専門知識を持っていても、調和のとれた人間というより、よく訓練された犬に近い。",
+      "summary": "恐怖と強制、暗記偏重の教育を批判。喜びと好奇心を動機に、専門化と全人的な陶冶を両立させるべきだと説く。学校は職業訓練所ではないとする。",
+      "topics": ["自立した思考", "動機づけ", "専門化の弊害"]
+    },
+    {
+      "id": "russell_einstein_manifesto_1955",
+      "reliability": "primary",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 22" }],
+      "themes": ["平和", "核", "科学と責任"],
+      "title": "ラッセル＝アインシュタイン宣言",
+      "type": "public_comment",
+      "date": "1955-07-09",
+      "medium": "共同声明（署名は死の直前、公表は死後）",
+      "language": "en",
+      "excerpt": "We appeal, as human beings, to human beings: Remember your humanity, and forget the rest.",
+      "translation": "私たちは人間として人間に訴える。あなたの人間性を思い出し、その他のことは忘れなさい。",
+      "summary": "水爆の登場で人類が自滅しうる時代に入ったとし、各国政府に戦争放棄と紛争の平和的解決を求めた。アインシュタインが最後に署名した公的文書で、パグウォッシュ会議へとつながった。",
+      "topics": ["核廃絶", "人類の存続", "国境を超えた責任"]
+    }
+  ]
+}

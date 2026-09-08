@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schemas/historical_context.schema.json",
+  "character": "fukuzawa_yukichi",
+  "period_label": "開国から明治国家の確立へ（1850s–1900）",
+  "span": { "start": "1853", "end": "1901" },
+  "contexts": [
+    {
+      "id": "bakumatsu_status_system",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "fukuo_jiden" }, { "source_id": "maruyama_1986" }],
+      "themes": ["社会", "身分"],
+      "domain": "society",
+      "region": "日本（諸藩）",
+      "period": { "start": "1600", "end": "1871" },
+      "title": "固定的な身分制と藩ごとの門閥",
+      "summary": "江戸期の武士社会は家格（門閥）で役職や俸禄がほぼ決まり、下級武士は能力があっても上位に就けなかった。学問は身分の飾りか、限られた家業だった。1871年の廃藩置県・四民平等でこの枠組みは制度上解体された。",
+      "relevance_to_subject": "中津藩の下士に生まれた福澤にとって、身分制は父の一生を奪った『敵』だった。彼の平等・独立・実学の主張は、この個人的経験と切り離せない。",
+      "contrast_with_today": "生まれた家で人生の天井が決まる社会だった。現代の『努力すれば』という前提自体が、当時は制度的に否定されていた。"
+    },
+    {
+      "id": "meiji_westernization",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "seiyo_jijo" }, { "source_id": "bunmeiron_no_gairyaku" }],
+      "themes": ["政治", "文化", "技術"],
+      "domain": "culture",
+      "region": "日本",
+      "period": { "start": "1868", "end": "1890" },
+      "title": "文明開化と、独立をめぐる危機感",
+      "summary": "不平等条約を結ばされた明治日本は、法・制度・産業・軍事を急速に西洋化し、条約改正と『一等国』化を目指した。知識人の間では、どこまで・何のために西洋化するかが激しく論じられた（西洋崇拝、国粋、折衷）。",
+      "relevance_to_subject": "福澤は『西洋文明は目的ではなく独立の手段』という立場をとり、盲目的模倣も攘夷も退けた。訳語の乏しい概念（rights, society, economy）を日本語にする作業も担った。",
+      "contrast_with_today": "『国が独立を保てるか』が現実の不安だった。個人の自己実現より、まず国家の存続が公共の主題だった。"
+    },
+    {
+      "id": "meiji_press_and_politics",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "jiji_shinpo" }, { "source_id": "fukuzawa_zenshu" }],
+      "themes": ["政治", "言論"],
+      "domain": "politics",
+      "region": "日本",
+      "period": { "start": "1874", "end": "1890" },
+      "title": "自由民権運動、言論統制、そして立憲制へ",
+      "summary": "1870年代から国会開設を求める自由民権運動が高まる一方、政府は讒謗律・新聞紙条例（1875）などで言論を統制した。1889年に大日本帝国憲法が発布され、1890年に帝国議会が開かれた。新聞の多くは政党の機関紙だった。",
+      "relevance_to_subject": "福澤は民権運動とも政府とも距離を取り、『不偏不党』の時事新報を拠点に在野から論じた。学者は官に入るべきか（森有礼らとの論争）という問いが切実だった。",
+      "contrast_with_today": "報道が政党の道具になりがちで、独立したジャーナリズムという発想自体が新しかった。政府批判には実刑の risk が伴った。"
+    },
+    {
+      "id": "meiji_east_asia",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "jiji_shinpo" }, { "source_id": "maruyama_1986" }],
+      "themes": ["国際情勢", "外交"],
+      "domain": "international",
+      "region": "東アジア",
+      "period": { "start": "1876", "end": "1895" },
+      "title": "清・朝鮮をめぐる緊張と日本の対外膨張",
+      "summary": "西洋列強のアジア進出を背景に、日本は朝鮮の開国を迫り（江華島事件1875）、清との影響力争いを深めた。1884年の甲申政変、1894–95年の日清戦争へと事態は進み、日本の対外姿勢は膨張的になっていった。",
+      "relevance_to_subject": "福澤は当初、朝鮮の近代化を支援した（金玉均ら）が、その失敗後、時事新報の対アジア論調は硬化した。「脱亜論」など無署名社説はこの文脈で書かれ、後年の帝国主義との関係で厳しく評価される。",
+      "contrast_with_today": "『近代化＝西洋化＝優劣』という発展段階論が知識人にも広く共有され、他民族への蔑視と結びつきやすかった。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/historical_context.schema.json",
+  "character": "REPLACE_ME",
+  "period_label": "",
+  "span": { "start": "", "end": "" },
+  "contexts": [
+    {
+      "id": "example_context",
+      "reliability": "common_knowledge",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "domain": "society",
+      "region": "",
+      "period": { "start": "", "end": "" },
+      "title": "",
+      "summary": "",
+      "relevance_to_subject": "",
+      "contrast_with_today": ""
+    }
+  ]
+}

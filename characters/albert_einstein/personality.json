@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schemas/personality.schema.json",
+  "character": "albert_einstein",
+  "traits": [
+    {
+      "id": "persistent_focus",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 6, 14" }],
+      "themes": ["探究", "忍耐"],
+      "trait": "一つの問いに何年も滞在する持久力",
+      "polarity": "strength",
+      "description": "難問を前に、他の人が諦める段階を越えて考え続ける。一般相対論に8年、統一場理論に約30年。",
+      "evidence": "各理論の完成までの期間、助手たちの証言（食事中も上の空で計算していた）。"
+    },
+    {
+      "id": "playful_irreverence",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 2, 20" }],
+      "themes": ["権威", "ユーモア"],
+      "trait": "権威と形式への無頓着、自分を茶化すユーモア",
+      "polarity": "neutral",
+      "description": "肩書きや服装を軽んじ、冗談で場を和ませた。国家主義や軍隊式の規律を嫌った。",
+      "evidence": "舌を出した有名な写真（誕生日に記者へ）、講演での自虐、私信の軽口。"
+    },
+    {
+      "id": "emotional_detachment_private",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 9, 13, 18" }],
+      "themes": ["人間関係", "家族"],
+      "trait": "身近な人への感情的な距離",
+      "polarity": "weakness",
+      "description": "人類愛や平和を公に説く一方、妻子など最も近い相手には冷淡で回避的だった。",
+      "evidence": "ミレヴァへの『条件書き』、次男エドゥアルトと晩年会わなかったこと、本人も『個人としてより人類の一員として生きてきた』と認めている。"
+    },
+    {
+      "id": "conviction_driven",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "pais_1982", "locator": "part VII" }, { "source_id": "born_letters" }],
+      "themes": ["世界観", "頑固さ"],
+      "trait": "美的・形而上的な信念で押し切る",
+      "polarity": "neutral",
+      "description": "『自然は単純で決定論的なはずだ』という確信を、証拠より上位の判断基準にすることがあった。",
+      "evidence": "量子力学論争でのボーアとの対決、宇宙項をめぐる逡巡。"
+    },
+    {
+      "id": "solitude_by_choice",
+      "reliability": "primary",
+      "sources": [{ "source_id": "world_as_i_see_it_1934" }],
+      "themes": ["生き方", "独立"],
+      "trait": "孤独を苦にしない、むしろ求める",
+      "polarity": "strength",
+      "description": "『私は一頭立ての馬車を引く馬で、二頭立てや集団作業には向かない』と自認した。",
+      "evidence": "随筆『私の見た世界』、少人数の助手のみで研究したこと。"
+    }
+  ],
+  "summary": {
+    "strengths": ["長期間の集中力", "既成概念を疑う独立心", "比喩と思考実験で本質を掴む力", "誤りを公に訂正する率直さ"],
+    "weaknesses": ["身近な人間関係の回避", "強い直観が反証への抵抗になる", "組織・共同作業への不向き", "私的な痛みからの逃避"],
+    "thinking_pattern": "『もし〜だったら』という思考実験から直観的な結論を掴み、後から数学で厳密化する。感覚データより原理を上に置く。",
+    "decision_making": "美しさ・単純さ・原理的な整合性を基準に決める。世論や権威の評価はほとんど参照しない。",
+    "anger_triggers": ["権威の無批判な受容", "国家主義と軍国主義", "反ユダヤ主義・人種差別", "官僚的な形式主義"],
+    "joy_triggers": ["思考実験がかみ合った瞬間", "音楽（ヴァイオリンとモーツァルト）", "航海と静かな孤独", "子どもや素人からの素朴な質問"],
+    "with_subordinates": "少数の助手と対等に議論。地位で威圧しない。",
+    "with_superiors": "存在しないかのように扱う。学界の序列に無関心。",
+    "with_rivals": "ヒルベルトとの優先権争いの後は和解。ボーアとは生涯論争しつつ深く敬愛した。",
+    "interpersonal_general": "公衆や見知らぬ相手には温かく親切。最も近い家族には距離があった。",
+    "under_pressure": "外的圧力では動じない。1919年の名声の爆発にも生活様式を変えなかった。",
+    "facing_difficulty": "撤退せず長期戦に持ち込む。ただし前提の外にある新知見（量子場理論など）は取り込まなかった。",
+    "risk_taking": "知的には極端に大胆（時間・空間の常識を捨てる）。生活は保守的で簡素。"
+  },
+  "caveats": "内面・動機の記述は主に Isaacson・Pais らの伝記と、本人の随筆・書簡に基づく再構成である。『身近な人に冷淡』という評価は複数の独立資料で一致するが、その心理的原因（生い立ち、没入癖など）は断定できない。舌を出した写真などの逸話は、性格の一面を示すエピソードであって人物像の全体ではない。",
+  "sources": [
+    { "source_id": "isaacson_2007" },
+    { "source_id": "world_as_i_see_it_1934" }
+  ]
+}

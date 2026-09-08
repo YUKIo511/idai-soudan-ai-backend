@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "episodes.schema.json",
+  "title": "重要なエピソード（spec §10）",
+  "description": "その人物を理解するための有名な逸話。行動・発言・そこから分かる価値観・史実性まで記録する。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "episodes": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "place": {
+                "type": "string"
+              },
+              "people_involved": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "what_happened": {
+                "type": "string",
+                "description": "起きたこと"
+              },
+              "background": {
+                "type": "string"
+              },
+              "his_action": {
+                "type": "string",
+                "description": "本人の行動"
+              },
+              "his_words": {
+                "type": "string",
+                "description": "本人の発言"
+              },
+              "quote_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              },
+              "result": {
+                "type": "string"
+              },
+              "values_revealed": {
+                "type": "string",
+                "description": "そこから分かる価値観"
+              },
+              "historical_assessment": {
+                "type": "string",
+                "description": "歴史的な評価"
+              },
+              "authenticity": {
+                "type": "string",
+                "enum": [
+                  "documented",
+                  "plausible",
+                  "embellished",
+                  "legend"
+                ],
+                "description": "documented=一次資料で裏づけ / plausible=状況的にありうる / embellished=核は事実だが脚色あり / legend=史実性が低い"
+              }
+            },
+            "required": [
+              "title",
+              "what_happened",
+              "authenticity"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "episodes"
+  ],
+  "additionalProperties": false
+}

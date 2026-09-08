@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "philosophy.schema.json",
+  "title": "思想・哲学（spec §7）",
+  "description": "spec が挙げる観点（人生観/仕事観/お金/成功/失敗/努力/教育/人間観/リーダーシップ/組織/恋愛/家族/社会/政治/宗教/科学/芸術/死生観/幸福/リスク/挑戦/常識）を domain として、見解ごとに1エントリ。根拠となる発言・行動へリンクする。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "views": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": "string",
+                "enum": [
+                  "life",
+                  "worldview",
+                  "work",
+                  "money",
+                  "success",
+                  "failure",
+                  "effort",
+                  "education",
+                  "humanity",
+                  "leadership",
+                  "organization",
+                  "love",
+                  "family",
+                  "society",
+                  "politics",
+                  "religion",
+                  "science",
+                  "art",
+                  "death",
+                  "happiness",
+                  "risk",
+                  "challenge",
+                  "convention"
+                ]
+              },
+              "title": {
+                "type": "string"
+              },
+              "view": {
+                "type": "string",
+                "description": "その人物の考え（要約1〜2文）"
+              },
+              "elaboration": {
+                "type": "string",
+                "description": "詳細な説明"
+              },
+              "evidence": {
+                "type": "string",
+                "description": "この見解の根拠となる発言・行動・著作"
+              },
+              "quote_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              },
+              "statement_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              },
+              "tensions": {
+                "type": "string",
+                "description": "矛盾・例外・言行不一致"
+              },
+              "evolution": {
+                "type": "string",
+                "description": "時期による変化"
+              }
+            },
+            "required": [
+              "domain",
+              "view"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "views"
+  ],
+  "additionalProperties": false
+}

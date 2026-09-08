@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schemas/sources.schema.json",
+  "character": "albert_einstein",
+  "sources": [
+    {
+      "id": "isaacson_2007",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "Einstein: His Life and Universe",
+      "authors": ["Walter Isaacson"],
+      "publisher": "Simon & Schuster",
+      "year": "2007",
+      "isbn": "9780743264730",
+      "language": "en",
+      "is_primary_source": false,
+      "reliability_note": "アインシュタイン文書館の資料公開後に書かれた総合的伝記。私信を多用。科学の技術的評価は物理史家の二次文献に依拠している。"
+    },
+    {
+      "id": "pais_1982",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "Subtle is the Lord: The Science and the Life of Albert Einstein",
+      "authors": ["Abraham Pais"],
+      "publisher": "Oxford University Press",
+      "year": "1982",
+      "isbn": "9780192806727",
+      "language": "en",
+      "is_primary_source": false,
+      "reliability_note": "物理学者による科学的伝記。理論の内容と発展史の記述で標準的に参照される。個人史の細部は後年の研究で更新された部分がある。"
+    },
+    {
+      "id": "ideas_and_opinions_1954",
+      "type": "book",
+      "tier": "primary",
+      "title": "Ideas and Opinions",
+      "authors": ["Albert Einstein"],
+      "publisher": "Crown Publishers",
+      "year": "1954",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "本人の随筆・講演・書簡を集めた公認の論集。翻訳・編集を経ているため字句は版により差がある。"
+    },
+    {
+      "id": "world_as_i_see_it_1934",
+      "type": "book",
+      "tier": "primary",
+      "title": "The World As I See It (Mein Weltbild)",
+      "authors": ["Albert Einstein"],
+      "year": "1934",
+      "language": "de",
+      "is_primary_source": true,
+      "reliability_note": "本人の社会・宗教・平和論を含む随筆集。政治的発言は当時の状況（ナチス台頭・亡命）を背景に読む必要がある。"
+    },
+    {
+      "id": "autobiographical_notes_1949",
+      "type": "autobiography",
+      "tier": "primary",
+      "title": "Autobiographical Notes (in P. A. Schilpp ed., Albert Einstein: Philosopher-Scientist)",
+      "authors": ["Albert Einstein"],
+      "publisher": "Open Court",
+      "year": "1949",
+      "language": "de",
+      "is_primary_source": true,
+      "reliability_note": "70歳の本人による回想。科学的自己理解の一次資料だが、若年期の記憶の再構成であり年代の細部は他資料と照合が要る。"
+    },
+    {
+      "id": "born_letters",
+      "type": "letter",
+      "tier": "primary",
+      "title": "The Born–Einstein Letters, 1916–1955",
+      "authors": ["Albert Einstein", "Max Born", "Hedwig Born"],
+      "publisher": "Macmillan",
+      "year": "1971",
+      "language": "de",
+      "is_primary_source": true,
+      "reliability_note": "量子力学をめぐる論争の一次資料。『神はサイコロを振らない』系の発言の出所。"
+    },
+    {
+      "id": "nobel_1921",
+      "type": "official_record",
+      "tier": "primary",
+      "title": "The Nobel Prize in Physics 1921 – Presentation and citation",
+      "authors": ["The Royal Swedish Academy of Sciences"],
+      "year": "1922",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/summary/",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "受賞理由の公式記録。授与は1922年、対象は光電効果の法則の発見であり、相対性理論は明示的に除外されている。"
+    },
+    {
+      "id": "viereck_1929",
+      "type": "interview",
+      "tier": "primary",
+      "title": "What Life Means to Einstein (The Saturday Evening Post, Oct 26, 1929)",
+      "authors": ["George Sylvester Viereck"],
+      "publisher": "The Saturday Evening Post",
+      "year": "1929",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "『想像力は知識より重要』の出典。聞き手ヴィーレックは後にナチス擁護者となる人物で、翻訳・脚色の余地がある。"
+    }
+  ]
+}

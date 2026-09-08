@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schemas/works.schema.json",
+  "character": "steve_jobs",
+  "works": [
+    {
+      "id": "apple_ii",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 7" }],
+      "themes": ["プロダクト"],
+      "title": { "ja": "Apple II", "en": "Apple II", "original": "Apple II", "original_lang": "en" },
+      "type": "product",
+      "year": "1977",
+      "description": "カラーグラフィックス・拡張スロット・BASIC 内蔵の完成品パーソナルコンピュータ。ウォズニアックが設計、ジョブズが製品・筐体・事業を主導。",
+      "context": "Apple I の自作キットからの脱皮。マークラの出資直後。",
+      "purpose": "技術者でない一般家庭にコンピュータを届ける。",
+      "collaborators": ["steve_wozniak", "ロッド・ホルト（電源設計）", "ジェリー・マノック（筐体）"],
+      "impact": "1980年代前半まで Apple の収益の柱。VisiCalc の登場で表計算マシンとしても普及。",
+      "reception": { "contemporary": "商業的大成功。ホビースト層からは『閉じている』との批判も。", "modern": "PC 産業の商業的出発点として評価。" },
+      "achievement_ids": ["apple_ii_market"]
+    },
+    {
+      "id": "macintosh_128k",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 11" }],
+      "themes": ["プロダクト", "デザイン"],
+      "title": { "ja": "Macintosh（初代 128K）", "en": "Macintosh 128K", "original": "Macintosh", "original_lang": "en" },
+      "type": "product",
+      "year": "1984",
+      "description": "GUI・マウス・複数書体を備えた一体型個人向けコンピュータ。",
+      "context": "PARC の GUI 概念の商用化。Jobs が Lisa チームを離れて統括。",
+      "purpose": "コマンドを覚えずに使える『万人のためのコンピュータ』。",
+      "collaborators": ["アンディ・ハーツフェルド", "バレル・スミス", "スーザン・ケア（アイコン・書体）", "ビル・アトキンソン"],
+      "impact": "当初は不振。DTP 用途で定着し、GUI を主流化。",
+      "reception": { "contemporary": "話題先行、販売失速。", "modern": "パーソナルコンピューティング史の転換点。" },
+      "achievement_ids": ["macintosh_gui"]
+    },
+    {
+      "id": "iphone",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 38" }, { "source_id": "macworld_2007" }],
+      "themes": ["プロダクト", "デザイン"],
+      "title": { "ja": "iPhone（初代）", "en": "iPhone", "original": "iPhone", "original_lang": "en" },
+      "type": "product",
+      "year": "2007",
+      "description": "マルチタッチUI・フルブラウザ・iPod 機能を統合した携帯電話。物理キーボードを廃した。",
+      "context": "『Apple が iPod を自ら食う』リスクを取った意思決定。",
+      "purpose": "電話・音楽・インターネットを1台に統合し、携帯電話の体験を作り直す。",
+      "collaborators": ["jony_ive", "スコット・フォーストール", "トニー・ファデル"],
+      "impact": "スマートフォンとモバイル経済の形を決定づけた。2008年の App Store がエコシステム化。",
+      "reception": { "contemporary": "熱狂と懐疑（キーボードなし・高価格・2G）。", "modern": "20世紀以降で最も影響の大きい消費者製品の一つとされる。" },
+      "achievement_ids": ["apple_turnaround_1997_2011"]
+    },
+    {
+      "id": "toy_story",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 20" }],
+      "themes": ["プロダクト", "忍耐"],
+      "title": { "ja": "トイ・ストーリー", "en": "Toy Story", "original": "Toy Story", "original_lang": "en" },
+      "type": "film",
+      "year": "1995",
+      "description": "世界初の長編フルCGアニメ映画。Pixar 制作、ディズニー配給。",
+      "context": "Jobs が長く赤字補填してきた Pixar の転機。監督はジョン・ラセター。",
+      "purpose": "（Jobs にとっては）Pixar を映画スタジオとして成立させ、投資を回収すること。",
+      "collaborators": ["ジョン・ラセター", "エド・キャットマル"],
+      "impact": "Pixar 上場（1995）で Jobs の資産を回復。長編CGアニメ市場を創出。",
+      "reception": { "contemporary": "批評的・商業的大成功。", "modern": "アニメーション史の画期。" }
+    }
+  ]
+}

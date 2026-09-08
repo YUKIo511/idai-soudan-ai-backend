@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schemas/criticisms.schema.json",
+  "character": "fukuzawa_yukichi",
+  "items": [
+    {
+      "id": "datsua_ron_imperialism",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "jiji_shinpo", "locator": "「脱亜論」1885" }, { "source_id": "maruyama_1986" }],
+      "themes": ["外交", "倫理", "評価"],
+      "kind": "modern_criticism",
+      "title": "対アジア論とアジア蔑視・帝国主義への加担",
+      "claim": "時事新報の無署名社説（「脱亜論」など）に見られる清・朝鮮を『半開』『悪友』とする論調は、日本の侵略と植民地支配の思想的地ならしになった。",
+      "by_whom": "戦後の歴史学・思想史の一部（アジア主義研究、植民地主義批判）",
+      "when": "1951",
+      "basis": "1885年「脱亜論」その他の対アジア社説、甲申政変後の論調の硬化。",
+      "rebuttal": "無署名社説の福澤自身の執筆かは確定しておらず、主筆・石河幹明の筆とする説（平山洋ら）がある。また『脱亜論』が同時代に大きな影響を与えた形跡は乏しく、戦後に代表作として『発見』されたとの指摘もある。",
+      "status": "contested",
+      "significance": "『どこまでが本人の言葉か』という帰属問題と、偉人の思想の負の側面をどう扱うかの代表的事例。"
+    },
+    {
+      "id": "individual_to_state",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "maruyama_1986" }, { "source_id": "gakumon_no_susume" }],
+      "themes": ["思想", "評価"],
+      "kind": "reassessment",
+      "title": "『個人の独立』が『国家の強化』の手段に読み替えられた",
+      "claim": "『一身独立して一国独立す』の力点が後段（一国独立）に移り、福澤の啓蒙が結果的に国家主義・国民動員の論理へ回収された。",
+      "by_whom": "政治思想史（丸山眞男の評価とその批判者の双方）",
+      "basis": "『学問のすゝめ』前半と後半の論調差、明治後期の受容のされ方。",
+      "rebuttal": "福澤自身は個人の自立を土台と位置づけており、国家主義的読解は誤読・時代状況によるものだとの擁護もある。丸山は福澤を『近代的個人』の思想家として高く評価した。",
+      "status": "contested",
+      "significance": "発信者の意図と、社会が受け取る意味がずれることの古典例。"
+    },
+    {
+      "id": "opportunism_charge",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuzawa_zenshu" }, { "source_id": "hirayama_2004" }],
+      "themes": ["一貫性", "評価"],
+      "kind": "controversy",
+      "title": "変節・ご都合主義という批判",
+      "claim": "民権を説きつつ国権を論じ、開化派支援から対アジア強硬論へ、絶対平和的な啓蒙から現実政治的な発言へと、局面ごとに立場を変えた。",
+      "by_whom": "同時代の民権派の一部、後年の論者",
+      "basis": "時期による論調の変化、『瘠我慢の説』で他者の変節を批判したこととの整合。",
+      "rebuttal": "『目的（独立）は一貫し、手段を状況で変えただけ』という現実主義としての擁護。無署名社説を根拠にした変節批判は帰属が不確かとの反論もある。",
+      "status": "contested",
+      "significance": "『節を通す』か『現実に適応する』かという、福澤自身が『瘠我慢の説』で立てた問いが、彼自身に跳ね返る。"
+    },
+    {
+      "id": "contemporary_influence",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "maruyama_1986" }, { "source_id": "fukuzawa_zenshu" }],
+      "themes": ["評価", "教育"],
+      "kind": "contemporary_praise",
+      "title": "近代日本最大の啓蒙家という同時代評価",
+      "claim": "『学問のすゝめ』『西洋事情』の桁外れの普及、慶應義塾からの人材輩出、時事新報の影響力により、福澤は明治の国民的教師と目された。死去時には広範な追悼が行われた。",
+      "by_whom": "同時代の知識人・言論界",
+      "when": "1901",
+      "basis": "著作の発行部数、門下の活躍、社会的地位。",
+      "rebuttal": "後年、その啓蒙の中身（対アジア観、女性論の限界、国家主義への接続）が問い直された。",
+      "status": "widely_accepted",
+      "significance": "生前の高評価と、後世の再評価（負の側面の発見）が併存する典型。"
+    }
+  ]
+}

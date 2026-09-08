@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "achievements.schema.json",
+  "title": "成し遂げたこと（spec §3）",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "achievements": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "invention",
+                  "company",
+                  "product",
+                  "war",
+                  "policy",
+                  "artwork",
+                  "book",
+                  "paper",
+                  "research",
+                  "social_movement",
+                  "idea",
+                  "discovery",
+                  "reform",
+                  "other"
+                ]
+              },
+              "year": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "year_range": {
+                "$ref": "common.schema.json#/$defs/dateRange"
+              },
+              "place": {
+                "type": "string"
+              },
+              "what": {
+                "type": "string",
+                "description": "何をしたのか"
+              },
+              "why": {
+                "type": "string",
+                "description": "なぜそれをしたのか（動機・目的）"
+              },
+              "how": {
+                "type": "string",
+                "description": "どうやって成し遂げたのか（手段・過程）"
+              },
+              "difficulties": {
+                "type": "string",
+                "description": "何が難しかったのか"
+              },
+              "outcome": {
+                "type": "string",
+                "description": "結果どうなったのか"
+              },
+              "impact_contemporary": {
+                "type": "string",
+                "description": "当時の業界・社会への影響"
+              },
+              "impact_legacy": {
+                "type": "string",
+                "description": "後世への影響"
+              },
+              "collaborators": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "work_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                },
+                "description": "works.json の id"
+              },
+              "quote_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              }
+            },
+            "required": [
+              "title",
+              "what"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "achievements"
+  ],
+  "additionalProperties": false
+}

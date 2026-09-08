@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "criticisms.schema.json",
+  "title": "評価・批判（spec §13）",
+  "description": "当時の評価/現代の評価/功績/批判/論争/倫理的問題/後世への影響。一方的に美化しない。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "contemporary_praise",
+                  "contemporary_criticism",
+                  "modern_praise",
+                  "modern_criticism",
+                  "controversy",
+                  "ethical_issue",
+                  "legacy",
+                  "reassessment"
+                ]
+              },
+              "title": {
+                "type": "string"
+              },
+              "claim": {
+                "type": "string",
+                "description": "何が言われているか"
+              },
+              "by_whom": {
+                "type": "string",
+                "description": "論者・立場"
+              },
+              "when": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "basis": {
+                "type": "string",
+                "description": "その主張の根拠"
+              },
+              "rebuttal": {
+                "type": "string",
+                "description": "反論・擁護論・文脈的説明"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "widely_accepted",
+                  "contested",
+                  "fringe"
+                ],
+                "description": "その見方が学界・世論でどの程度支持されているか"
+              },
+              "significance": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "claim"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "items"
+  ],
+  "additionalProperties": false
+}

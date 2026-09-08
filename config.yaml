@@ -1,0 +1,106 @@
+# 偉人相談AI — RAGパイプライン設定
+# provider / backend は環境変数でも上書き可:
+#   KB_EMBEDDINGS_PROVIDER, KB_VECTORSTORE_BACKEND, KB_LLM_PROVIDER
+#   KB_OLLAMA_MODEL, KB_OLLAMA_BASE_URL, KB_ANSWER_STYLE
+#
+# 速度メモ（GPU なし・CPU 推論の場合）:
+#   - 待ち時間の主因は Ollama の prompt_eval（プロンプト処理）。モデルが大きいほど遅い。
+#   - system プロンプトは「不変部分→<knowledge>（可変）」の順。同じ偉人への2回目以降は
+#     Ollama がプレフィックスをキャッシュし first_token が約半分になる。
+#   - warmup_on_start でモデルロード（十数秒）を起動時に済ませる。
+#   - 既定は qwen3:4b（8b は CPU では遅すぎる）。詳細と対策は OLLAMA_SETUP.md。
+
+paths:
+  characters_dir: characters
+  schemas_dir: schemas
+  vectorstore_dir: .vectorstore   # memory バックエンドの永続先
+  chroma_dir: .chroma             # chroma バックエンドの永続先
+
+embeddings:
+  provider: fake                  # fake | openai | voyage
+  fake:
+    dim: 256
+  openai:
+    model: text-embedding-3-large
+    dim: 3072
+  voyage:
+    model: voyage-3
+    dim: 1024
+
+vectorstore:
+  backend: memory                 # memory | chroma
+  collection_prefix: char__       # 偉人ごとに char__<slug> で分離
+
+llm:
+  provider: ollama                # fake | ollama | anthropic | openai
+  # 回答の作り方: advisor=偉人の思想を「参照」して現代の相談へ助言（既定） / embody=一人称で演じる
+  answer_style: dialogue   # dialogue=偉人本人と短く対話 / advisor=第三者アドバイザー / embody=一人称の長文
+
+  # --- ローカル LLM（Ollama）。API キー不要・完全ローカル ---
+  # モデルは `model:` を書き換えるだけで切替（qwen3:8b / qwen3:4b / qwen3:1.7b）。要 `ollama pull <model>`
+  ollama:
+    # dialogue（本人と短く対話）は 8b が安定。速度優先なら qwen3:4b（口調が荒くなる／字数注記が混じることがある）
+    model: qwen3:8b
+    base_url: http://localhost:11434
+    think: false                # 思考出力を止める（速い＆チャット向き）
+    # assistant を この語で prefill し、モデルを「回答の続き」から書き始めさせる。
+    # (A) 共感の入りを固定でき、qwen3:4b/1.7b の思考メモ混入も防げる。回答は必ずこの語で始まる。
+    no_think_prefill: "なるほど。"
+    keep_alive: 30m             # 応答後もメモリ常駐（2回目以降が速い）
+    request_timeout: 600        # 秒。CPU 推論は遅いので余裕を持たせる
+    num_ctx: 4096              # コンテキスト長。毎回同じ値なら Ollama がリロードしない（重要）
+    num_predict: 260           # dialogue は短いので少なめ（≈120〜220字）。生成が速い
+    # 生成停止シーケンス（弱いモデルの自己注釈・繰り返し・思考再開を止める）。改行は \n
+    stop: ["（※", "(※", "（注", "\n[", "\n- ", "\n* ", "</think>", "字）", "字以内", "\n\n\n", "\n---"]
+    temperature: 0.7           # Ollama 用の温度（llm.temperature より優先）
+    warmup_on_start: true      # FastAPI 起動時にモデルロード＋プレフィックスをキャッシュ
+    warmup_characters: ["steve_jobs"]   # 温める偉人（未指定=先頭1名 / "all"=全員）
+
+  # --- Cloudflare Workers AI（本番用・OpenAI 互換 API）---
+  # 認証は環境変数のみ: CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN（.env、Expo/アプリ側には置かない）
+  # 本番は KB_LLM_PROVIDER=cloudflare で切替。ローカル開発は provider: ollama のまま。
+  cloudflare:
+    # 採用モデル（2026-09-08 比較で決定）:
+    #   @cf/meta/llama-3.3-70b-instruct-fp8-fast … 日本語最良・dialogue構造遵守・first_token 0.8〜1.6s
+    # 次点（フォールバック候補）: @cf/mistralai/mistral-small-3.1-24b-instruct（速いが口調が硬め）
+    # 却下: qwen3-30b-a3b（thinking垂れ流しで不安定）, gemma-4-26b（OpenAI互換で空応答）
+    model: "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+    # account_id: ""           # 通常は環境変数 CLOUDFLARE_ACCOUNT_ID を使用（ここに書いても可）
+    temperature: 0.7
+    max_tokens: 320            # コスト暴走防止の上限（dialogue は 120〜220字なので十分）
+    request_timeout: 60        # 秒
+
+  anthropic:
+    model: claude-sonnet-5
+  openai:
+    model: gpt-4.1
+  temperature: 0.7
+  max_tokens: 1400
+
+retrieval:
+  k: 5                            # 通常相談で LLM に渡す最大チャンク数（速度優先。旧: 10）
+  k_complex: 8                    # 長い/複数の問いを含む相談で使う上限（API が自動判定）
+  max_chunk_chars: 180            # LLM へ渡す各 chunk 本文の上限（文末で丸め）。プロンプト短縮。0 で無制限
+  over_fetch: 5                   # Python 側フィルタ用に k*over_fetch 取得
+  multi_query: true               # 人生経験/思想/実績/名言/エピソード/人間関係/時代背景 で多観点検索（重複は chunk_id で除去）
+  # 信頼性によるスコア減衰（0で実質除外）
+  reliability_weights:
+    primary: 1.0
+    secondary_reliable: 0.9
+    common_knowledge: 0.75
+    uncertain: 0.5
+    legend: 0.3
+  drop_reliability: []            # 例: ["legend"] で検索対象から完全除外
+  # 名言の帰属状態によるスコア減衰（#13）
+  quote_attribution_weights:
+    verified: 1.0
+    likely: 0.95
+    disputed: 0.55
+    misattributed: 0.2
+    apocryphal: 0.15
+  # エピソードの史実性によるスコア減衰
+  episode_authenticity_weights:
+    documented: 1.0
+    plausible: 0.85
+    embellished: 0.6
+    legend: 0.4

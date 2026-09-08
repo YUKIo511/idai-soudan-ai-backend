@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/statements.schema.json",
+  "character": "REPLACE_ME",
+  "statements": [
+    {
+      "id": "example_statement",
+      "reliability": "primary",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "title": "",
+      "type": "speech",
+      "date": "",
+      "place": "",
+      "audience": "",
+      "medium": "",
+      "language": "",
+      "excerpt": "",
+      "translation": "",
+      "full_text_ref": "",
+      "summary": "",
+      "topics": []
+    }
+  ]
+}

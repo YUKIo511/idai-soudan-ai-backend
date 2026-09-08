@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/timeline.schema.json",
+  "character": "REPLACE_ME",
+  "events": [
+    {
+      "id": "example_event",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "date": "",
+      "age": 0,
+      "phase": "turning_point",
+      "place": "",
+      "title": "",
+      "event": "",
+      "background": "",
+      "cause": "",
+      "his_action": "",
+      "his_words": "",
+      "quote_ids": [],
+      "result": "",
+      "related_people": [],
+      "historical_significance": ""
+    }
+  ]
+}

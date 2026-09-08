@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schemas/philosophy.schema.json",
+  "character": "steve_jobs",
+  "views": [
+    {
+      "id": "work_love_what_you_do",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005" }],
+      "themes": ["仕事", "生き方"],
+      "domain": "work",
+      "title": "満足できる唯一の道は、素晴らしいと信じる仕事をすること",
+      "view": "仕事は人生の大部分を占める。心から良いと思える仕事をすること、そしてその仕事を愛することだけが、真に満たされる道だと考えた。まだ見つかっていないなら、妥協して落ち着かず探し続けよ、と説いた。",
+      "elaboration": "毎朝鏡に向かって『今日が人生最後の日でも、今からやることをやりたいか』と問い、ノーが続くなら何かを変えるべきだ、と述べた。",
+      "evidence": "スタンフォード卒業式スピーチ第3話。",
+      "quote_ids": ["stay_hungry_stay_foolish"],
+      "tensions": "『愛せる仕事を探せ』という助言は、実際には彼が偶然と縁（ウォズニアックとの出会い、Atari 就職）に恵まれた事実を単純化している、との批判がある。"
+    },
+    {
+      "id": "focus_less_is_more",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 26" }, { "source_id": "d8_2010" }],
+      "themes": ["集中", "戦略"],
+      "domain": "work",
+      "title": "何をやらないかを決めることが戦略",
+      "view": "イノベーションとは1000のことにノーと言うこと。少数の製品に組織の全リソースを集中し、その一つひとつを卓越させるべきだと考えた。",
+      "elaboration": "1997年の復帰時、数十の製品計画を『消費者/プロ × デスクトップ/ポータブル』の4象限4製品に削減した。年に一度、幹部合宿で『来年やる10のこと』を挙げさせ、7つを線で消して『3つしかできない』と宣言したという。",
+      "evidence": "Apple 再建の実際の意思決定、D8 での発言。",
+      "quote_ids": ["focus_is_saying_no"],
+      "evolution": "初期（Lisa 期）はむしろ手を広げ仕様を膨らませていた。集中の規律は NeXT の失敗と復帰後に強まった。"
+    },
+    {
+      "id": "intersection_tech_liberal_arts",
+      "reliability": "primary",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 41" }],
+      "themes": ["デザイン", "プロダクト", "教育"],
+      "domain": "art",
+      "title": "テクノロジーとリベラルアーツの交差点",
+      "view": "優れた製品は工学だけでも芸術だけでも生まれず、両者の交わる場所に立って作られる。Apple の DNA はそこにある、と繰り返し述べた。",
+      "elaboration": "iPad2 発表（2011）で『技術だけでは足りない。人文学・人間性と結ばれた技術こそが心を歌わせる』と語った。中退後に潜り込んだカリグラフィ講義を、この信条の原体験として挙げた。",
+      "evidence": "複数の製品発表、Isaacson の総括章。",
+      "quote_ids": ["connecting_the_dots"]
+    },
+    {
+      "id": "craftsmanship_unseen_parts",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 6" }],
+      "themes": ["仕事", "完成度", "誠実さ"],
+      "domain": "work",
+      "title": "見えない部分まで美しく作る",
+      "view": "養父から『裏板や内部も、見えなくてもきちんと作る。それが職人だ』と教わり、これを製品哲学にした。基板の配線の美しさやケースの内側まで妥協しない。",
+      "elaboration": "Apple II や Mac で、ユーザーが決して見ない内部レイアウトの美しさを要求した。一方でこの完璧主義は納期崩壊や量産困難の原因にもなった。",
+      "evidence": "養父ポールの教えに関する本人の回想（Isaacson）。",
+      "quote_ids": ["real_artists_ship"],
+      "tensions": "『見えない所まで完璧に』と『本物のアーティストは出荷する（締切を守る）』は常に緊張関係にあり、Jobs 自身その間で揺れた。"
+    },
+    {
+      "id": "customers_and_innovation",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 31" }, { "source_id": "d8_2010" }],
+      "themes": ["顧客", "イノベーション", "マーケティング"],
+      "domain": "work",
+      "title": "顧客は見せられるまで欲しい物を言えない — が、体験から逆算はする",
+      "view": "フォーカスグループで次の製品を設計することはしない。人は形を見るまで自分の欲しい物を言葉にできない、と考えた。ただし『顧客を無視する』のではなく、顧客の体験がどうあるべきかを起点に技術を選んだ（『1,000曲をポケットに』）。",
+      "elaboration": "D8 で『我々の仕事は、顧客が欲しくなる前に、彼らが何を欲しがるかを読むことだ』と述べた。",
+      "evidence": "D8 インタビュー、iPod の打ち出し方。",
+      "quote_ids": ["1000_songs_in_your_pocket", "faster_horses_apocryphal"],
+      "tensions": "『速い馬』の格言（misattributed）で戯画化されがちだが、実際には市場データや競合分析を無視したわけではない。"
+    },
+    {
+      "id": "death_as_change_agent",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005" }],
+      "themes": ["死生観", "生き方", "決断"],
+      "domain": "death",
+      "title": "死は生の最良の発明",
+      "view": "『まもなく死ぬ』と自覚することが、大きな決断を下す最良の道具になる。外的期待・プライド・失敗の恐れは死の前でほとんど消え、本当に大事なものだけが残る。",
+      "elaboration": "2004年のがん手術の翌年、スタンフォードで語られた。『あなたの時間は限られている。他人の人生を生きて無駄にするな』。",
+      "evidence": "スタンフォード卒業式スピーチ第3話。",
+      "evolution": "2003–04年のがん体験を経て、死生観の語りが具体的・切実になった。"
+    },
+    {
+      "id": "money_not_the_point",
+      "reliability": "primary",
+      "sources": [{ "source_id": "wired_1996" }, { "source_id": "isaacson_2011", "locator": "chap. 26" }],
+      "themes": ["お金", "使命"],
+      "domain": "money",
+      "title": "金は目的ではなく、良い物を作った結果",
+      "view": "25歳で資産が大きく増えたが、それで人生観は変えないと決めた、と語った。動機は富ではなく『偉大な製品を作る会社を残すこと』だとした。Apple 復帰後の報酬は名目上1ドルとした（実際にはストックや会社購入の航空機など別の形の報酬はあった）。",
+      "evidence": "Wired 1996 インタビュー、復帰後の報酬設計。",
+      "tensions": "『金は目的でない』と語りつつ、Pixar 上場で得た巨額の富や、駐車場・ナンバープレート・住まいをめぐる振る舞いには矛盾も指摘される。"
+    }
+  ]
+}

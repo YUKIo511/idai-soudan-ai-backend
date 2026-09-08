@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/episodes.schema.json",
+  "character": "steve_jobs",
+  "episodes": [
+    {
+      "id": "calligraphy_class_reed",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005" }],
+      "themes": ["教育", "デザイン", "直感"],
+      "title": "リード大学でカリグラフィの講義に潜り込む",
+      "date": "1973",
+      "place": "リード大学",
+      "people_involved": ["ロバート・パラディーノ（書法教師）"],
+      "what_happened": "退学後、単位に関係なくカリグラフィの授業に出席し、セリフ／サンセリフや字間調整の美を学んだ。当時は実用性を全く想定していなかった。",
+      "background": "リード大学は当時アメリカ有数の書法教育で知られた。",
+      "his_action": "『将来役立つか』を基準にせず、美しいと感じたから学んだ。",
+      "his_words": "『もしあの講義に潜り込んでいなかったら、Mac に複数書体や字間調整は載らなかっただろう』",
+      "quote_ids": ["connecting_the_dots"],
+      "result": "10年後、Macintosh が美しいタイポグラフィを備えた最初の量産機になった。",
+      "values_revealed": "好奇心を実用性より優先する。点の意味は後からしか分からない。",
+      "historical_assessment": "『無駄に見える学び』が長期で効くことの代表的な自己語り。ただし後知恵の物語化である点は留意される。",
+      "authenticity": "documented"
+    },
+    {
+      "id": "one_button_mouse_insistence",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 10" }],
+      "themes": ["デザイン", "単純さ", "リーダーシップ"],
+      "title": "マウスのボタンは1つだけにこだわる",
+      "date": "1980",
+      "place": "Apple",
+      "people_involved": ["ディーン・ホヴィー（IDEO の前身のデザイナー）"],
+      "what_happened": "ゼロックス由来の3ボタンマウスに対し、ジョブズは『ボタンは1つ』と要求。誤操作の余地を消し、誰でも直感で使えることを優先した。",
+      "background": "PARC 訪問（1979）で見た GUI とマウスを Lisa／Mac に取り込む過程。",
+      "his_action": "コスト・技術上の難색を押し切り、量産可能な1ボタン設計をやり直させた。",
+      "result": "Mac の『すぐ使える』体験の象徴に。一方、上級者からは長く不評だった。",
+      "values_revealed": "単純さは機能削減ではなく規律。迷いを設計から排除する。",
+      "historical_assessment": "『Simplicity is the ultimate sophistication』を体現した例として引かれる。",
+      "authenticity": "documented"
+    },
+    {
+      "id": "iphone_keynote_2007_demo",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 38" }, { "source_id": "macworld_2007" }],
+      "themes": ["プロダクト", "本番力", "完璧主義"],
+      "title": "綱渡りだった初代 iPhone の発表デモ",
+      "date": "2007-01-09",
+      "place": "サンフランシスコ、Macworld",
+      "people_involved": ["Apple エンジニアチーム"],
+      "what_happened": "発表時点で iPhone のソフトは未完成でクラッシュ多発だった。ジョブズは各機能を『クラッシュしない特定の操作順（ゴールデンパス）』でだけ実演し、通信も会場に基地局を持ち込んで安定させた。1台では途中で落ちるため複数台を切り替えた。",
+      "background": "発表を先に公表し、退路を断って開発を追い込む Jobs の常套手段。",
+      "his_action": "リスクを承知で『完成しているように見せる』本番を作り込み、成功させた。",
+      "result": "デモは滞りなく見え、iPhone は熱狂的に受け止められた。実出荷は同年6月。",
+      "values_revealed": "『出荷して初めて意味がある』。ただし演出と実態の距離を厭わない一面も示す。",
+      "historical_assessment": "プレゼンの伝説として語られる一方、内実は綱渡りだったことが後に明らかになった。",
+      "authenticity": "documented"
+    }
+  ]
+}

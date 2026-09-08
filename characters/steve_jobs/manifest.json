@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "slug": "steve_jobs",
+  "display_name": {
+    "ja": "スティーブ・ジョブズ",
+    "en": "Steve Jobs"
+  },
+  "one_line": "Apple を共同創業し、Mac・iPod・iPhone で個人向けコンピューティングを再定義した起業家",
+  "era": "20世紀後半〜21世紀初頭",
+  "birth_year": "1955",
+  "death_year": "2011",
+  "nationality": [
+    "アメリカ合衆国"
+  ],
+  "occupations": [
+    "起業家",
+    "実業家",
+    "プロダクトデザインの統括者"
+  ],
+  "tags": [
+    "テクノロジー",
+    "起業",
+    "プロダクト",
+    "デザイン",
+    "リーダーシップ"
+  ],
+  "language_primary": "en",
+  "status": "in_progress",
+  "counts": {},
+  "kb": {
+    "embedding_model": "fake(model=hashing-256, dim=256)",
+    "embedding_dim": 256,
+    "vectorstore": "MemoryVectorStore",
+    "chunk_count": 65,
+    "rag_excluded": 0,
+    "last_built": "2026-09-07T02:55:36+00:00",
+    "content_hash": "02ced5c507476c3f"
+  }
+}

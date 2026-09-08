@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schemas/works.schema.json",
+  "character": "fukuzawa_yukichi",
+  "works": [
+    {
+      "id": "work_seiyo_jijo",
+      "reliability": "primary",
+      "sources": [{ "source_id": "seiyo_jijo" }],
+      "themes": ["著述", "啓蒙"],
+      "title": { "ja": "西洋事情", "en": "Conditions in the West", "original": "西洋事情", "original_lang": "ja" },
+      "type": "book",
+      "year_range": { "start": "1866", "end": "1870" },
+      "description": "欧米の政治体制・議会・税制・国債・銀行・郵便・病院・学校・新聞などを平易に紹介した書。初編・外編・二編からなる。",
+      "context": "幕府使節での三度の渡航の見聞をまとめたもの。",
+      "purpose": "西洋の力の源泉は兵器ではなく『社会の仕組みと精神』にあると伝える。",
+      "impact": "幕末・明治初期に大量に流通し、海賊版も出た。維新政府の制度設計や実業の基礎知識になった。",
+      "reception": { "contemporary": "爆発的に読まれた。", "modern": "近代日本の概念語彙形成への寄与が評価される。" },
+      "achievement_ids": ["seiyo_jijo_book"]
+    },
+    {
+      "id": "work_gakumon_no_susume",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume" }],
+      "themes": ["著述", "独立", "教育"],
+      "title": { "ja": "学問のすゝめ", "en": "An Encouragement of Learning", "original": "学問のすゝめ", "original_lang": "ja" },
+      "type": "book",
+      "year_range": { "start": "1872", "end": "1876" },
+      "description": "全17編。生得の平等、実学の必要、一身独立と一国独立、学者の職分、国民の気風などを平易な文体で説く。",
+      "context": "四民平等の直後、『個人は何をなすべきか』が問われた時期。",
+      "purpose": "身分によらぬ個人の自立を、庶民の言葉で促す。",
+      "impact": "当時としては桁外れの部数が流通し、明治の国民的教養書になった。",
+      "reception": { "contemporary": "出世術・国家道具論としての誤読も広がった。", "modern": "『個人』という観念の普及に寄与した反面、国家主義への回収も論じられる。" },
+      "achievement_ids": ["gakumon_no_susume_work"]
+    },
+    {
+      "id": "work_bunmeiron",
+      "reliability": "primary",
+      "sources": [{ "source_id": "bunmeiron_no_gairyaku" }, { "source_id": "maruyama_1986" }],
+      "themes": ["思想", "著述"],
+      "title": { "ja": "文明論之概略", "en": "An Outline of a Theory of Civilization", "original": "文明論之概略", "original_lang": "ja" },
+      "type": "book",
+      "year": "1875",
+      "description": "文明を『野蛮→半開→文明』の相対的段階と捉え、日本の目的を『独立』、手段を『国民の智徳の進歩』と位置づける。日本史を『権力の偏重』論で分析する。",
+      "context": "西洋崇拝と攘夷のあいだで、冷静な枠組みが求められていた。",
+      "purpose": "目的と手段を混同せず、文明摂取の意味を問い直す。",
+      "impact": "明治の知識人の思考枠組みに影響した。",
+      "reception": { "contemporary": "相対主義的な議論は理解されにくかった。", "modern": "丸山眞男らにより戦後も精読され続ける代表的文明論。" },
+      "achievement_ids": ["bunmeiron_work"]
+    },
+    {
+      "id": "work_fukuo_jiden",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden" }],
+      "themes": ["著述", "自伝"],
+      "title": { "ja": "福翁自伝", "en": "The Autobiography of Yukichi Fukuzawa", "original": "福翁自伝", "original_lang": "ja" },
+      "type": "book",
+      "year": "1899",
+      "description": "少年期の身分差別、蘭学修業、渡航、慶應義塾、維新後の言論までを、軽妙な語りで回想した口述自伝。",
+      "context": "脳出血からの一時回復期に口述筆記された。",
+      "purpose": "自らの半生を通じて『独立』の生き方を具体的に示す。",
+      "impact": "日本の自伝文学の代表作。福澤研究の基本一次資料。",
+      "reception": { "modern": "面白さと史料的価値の両面で高評価。ただし自己演出・記憶の再構成を含む点に注意が要る。" }
+    },
+    {
+      "id": "work_jiji_shinpo",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "jiji_shinpo" }, { "source_id": "fukuzawa_zenshu" }],
+      "themes": ["言論", "新聞"],
+      "title": { "ja": "時事新報", "en": "Jiji-Shimpō (newspaper)", "original": "時事新報", "original_lang": "ja" },
+      "type": "other",
+      "year_range": { "start": "1882", "end": "1936" },
+      "description": "福澤が創刊・主宰した独立系の日刊紙。『不偏不党』を掲げ、経済・外交・教育・女性問題を論じた。社説は無署名。",
+      "context": "政党機関紙が多い中で、政府にも政党にも属さない言論の場をつくる試み。",
+      "purpose": "在野から国全体を論じる恒常的な足場を持つ。",
+      "impact": "有力紙に成長。福澤の後半生の主な言論の舞台。",
+      "reception": { "contemporary": "経済記事に定評があった。", "modern": "無署名社説（「脱亜論」等）の福澤への帰属をめぐる論争の焦点でもある。" }
+    }
+  ]
+}

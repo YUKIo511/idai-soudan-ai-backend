@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/relationships.schema.json",
+  "character": "REPLACE_ME",
+  "people": [
+    {
+      "id": "example_person",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "name": { "ja": "", "en": "", "original": "", "original_lang": "" },
+      "person_slug": "",
+      "relation_type": "colleague",
+      "relation_label": "",
+      "period": { "start": "", "end": "" },
+      "how_they_met": "",
+      "dynamic": "",
+      "key_events": [],
+      "influence_on_subject": "",
+      "influence_on_other": "",
+      "episode_ids": []
+    }
+  ]
+}

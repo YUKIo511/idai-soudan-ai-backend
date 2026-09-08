@@ -1,0 +1,187 @@
+{
+  "$schema": "../../schemas/quotes.schema.json",
+  "character": "steve_jobs",
+  "quotes": [
+    {
+      "id": "stay_hungry_stay_foolish",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005", "quote": "Stay hungry. Stay foolish." }],
+      "themes": ["生き方", "挑戦", "教育"],
+      "text": {
+        "original": "Stay hungry. Stay foolish.",
+        "original_lang": "en",
+        "ja": "ハングリーであれ。愚か者であれ。",
+        "en": "Stay hungry. Stay foolish."
+      },
+      "attribution_status": "verified",
+      "said_on": "2005-06-12",
+      "said_at": "スタンフォード大学 卒業式",
+      "audience": "卒業生",
+      "context": "スピーチの結び。",
+      "background": "Jobs 自身が若い頃に愛読した『Whole Earth Catalog』最終号（1974年）裏表紙の言葉を引用したもの。彼のオリジナルの言い回しではない点を本人がスピーチ内で明言している。",
+      "medium": "スピーチ",
+      "first_appearance": "スタンフォード卒業式スピーチ（2005）。原句は Whole Earth Catalog 最終号（1974）。",
+      "meaning": "満ち足りて守りに入るな、常識に囚われて『賢く』振る舞いすぎるな、という自己への戒め。",
+      "relation_to_thought": "計画より好奇心を優先するキャリア観と直結する。"
+    },
+    {
+      "id": "connecting_the_dots",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005" }],
+      "themes": ["キャリア", "教育", "直感"],
+      "text": {
+        "original": "You can't connect the dots looking forward; you can only connect them looking backwards.",
+        "original_lang": "en",
+        "ja": "点と点は、先を見て結ぶことはできない。振り返って初めて結べる。",
+        "en": "You can't connect the dots looking forward; you can only connect them looking backwards."
+      },
+      "attribution_status": "verified",
+      "said_on": "2005-06-12",
+      "said_at": "スタンフォード大学 卒業式",
+      "audience": "卒業生",
+      "context": "リード大学中退とカリグラフィ聴講の逸話に続けて。",
+      "background": "退学後に興味本位で受けた講義が10年後の Macintosh の書体設計に生きた、という話の締め。",
+      "medium": "スピーチ",
+      "meaning": "将来の役立ち方は事前に読めない。今の選択が後で一貫すると信じて、好奇心に従え。",
+      "relation_to_thought": "キャリアは設計できないが回顧すると筋が通る、という考えの中核。"
+    },
+    {
+      "id": "getting_fired_stanford",
+      "reliability": "primary",
+      "sources": [{ "source_id": "stanford_2005" }],
+      "themes": ["失敗", "挫折", "立ち直り", "仕事"],
+      "text": {
+        "original": "Getting fired from Apple was the best thing that could have ever happened to me.",
+        "original_lang": "en",
+        "ja": "Apple を追われたことは、私に起こりうる最良の出来事だった。",
+        "en": "Getting fired from Apple was the best thing that could have ever happened to me."
+      },
+      "attribution_status": "verified",
+      "said_on": "2005-06-12",
+      "said_at": "スタンフォード大学 卒業式",
+      "audience": "卒業生",
+      "context": "1985年に Apple を去った経験の回想。",
+      "background": "解任直後は数か月ひどく落ち込んだ、とも同じスピーチで述べている。美化ではなく事後の再解釈として語られた。",
+      "medium": "スピーチ",
+      "meaning": "『成功者としての重さ』が『初心者としての軽さ』に置き換わり、NeXT・Pixar・家庭という最も創造的な時期に入れた、という趣旨。",
+      "relation_to_thought": "失敗を『そのとき』ではなく『後で』評価する態度。failures.json の apple_ouster_1985 と対で読む。"
+    },
+    {
+      "id": "real_artists_ship",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 11" }],
+      "themes": ["仕事", "完成", "締切"],
+      "text": {
+        "original": "Real artists ship.",
+        "original_lang": "en",
+        "ja": "本物のアーティストは、出荷する。",
+        "en": "Real artists ship."
+      },
+      "attribution_status": "likely",
+      "said_on": "1983",
+      "said_at": "Macintosh 開発チーム",
+      "audience": "開発メンバー",
+      "context": "完璧主義で締切を守れないエンジニアを鼓舞・叱咤する場面。",
+      "background": "Macintosh 開発期の Jobs の口癖として複数の元メンバーが証言。逐語の一次記録は乏しい。",
+      "medium": "社内発言（証言ベース）",
+      "meaning": "どれだけ理想が高くても、世に出さなければ意味がない。完成度と出荷を両立せよ。",
+      "relation_to_thought": "完璧主義と『現実に届ける』ことの緊張。philosophy の craftsmanship と対で読む。"
+    },
+    {
+      "id": "focus_is_saying_no",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 26" }],
+      "themes": ["集中", "戦略", "仕事"],
+      "text": {
+        "original": "Focus is about saying no.",
+        "original_lang": "en",
+        "ja": "集中とは、ノーと言うことだ。",
+        "en": "Focus is about saying no."
+      },
+      "attribution_status": "likely",
+      "said_on": "1997",
+      "said_at": "Apple 復帰後の社内",
+      "context": "製品ラインを4つに絞った時期の説明。1998年 WWDC などでも近い趣旨を公に語っている。",
+      "background": "Isaacson が Jobs の発言として要約した表現。公開の場での類似発言が複数ある。",
+      "medium": "社内発言／講演",
+      "meaning": "やることを増やすより、やらないことを決めることが戦略の本体。",
+      "relation_to_thought": "『選択と集中』による Apple 再建の中心思想。"
+    },
+    {
+      "id": "put_a_dent_in_the_universe",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 11" }],
+      "themes": ["使命", "野心", "仕事"],
+      "text": {
+        "original": "We're here to put a dent in the universe. Otherwise why else even be here?",
+        "original_lang": "en",
+        "ja": "我々は宇宙にへこみを残すためにここにいる。でなければ、なぜここにいる？",
+        "en": "We're here to put a dent in the universe. Otherwise why else even be here?"
+      },
+      "attribution_status": "likely",
+      "said_on": "1984",
+      "context": "Macintosh 開発期、チームを鼓舞する文脈。",
+      "background": "この言い回しは Jobs のものとして広く定着しているが、初出の逐語記録は特定しにくい。伝記・元同僚証言に依拠。",
+      "medium": "社内発言（証言ベース）",
+      "meaning": "働く理由を金銭や地位でなく『世界への痕跡』に置く。",
+      "relation_to_thought": "誇大とも取れる使命語りで人を動かすリーダーシップ様式（\"reality distortion field\"）と関係。"
+    },
+    {
+      "id": "1000_songs_in_your_pocket",
+      "reliability": "primary",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 30" }],
+      "themes": ["プロダクト", "伝え方"],
+      "text": {
+        "original": "1,000 songs in your pocket.",
+        "original_lang": "en",
+        "ja": "ポケットに1,000曲。",
+        "en": "1,000 songs in your pocket."
+      },
+      "attribution_status": "verified",
+      "said_on": "2001-10-23",
+      "said_at": "iPod 発表会",
+      "audience": "報道関係者",
+      "context": "初代 iPod の発表。",
+      "background": "スペック（5GB, 1.8インチHDD）ではなく、利用者の体験を一句で表す Jobs 流の説明。",
+      "medium": "製品発表",
+      "meaning": "技術指標ではなく『あなたにとって何が変わるか』で製品を語る。",
+      "relation_to_thought": "マーケティング哲学（顧客の体験から逆算する）の実例。"
+    },
+    {
+      "id": "microsoft_no_taste_misattrib",
+      "reliability": "uncertain",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 14（Triumph of the Nerds での発言に言及）" }],
+      "themes": ["ライバル", "デザイン", "批判"],
+      "text": {
+        "original": "The only problem with Microsoft is they just have no taste. They have absolutely no taste.",
+        "original_lang": "en",
+        "ja": "マイクロソフトの唯一の問題は、センスがないことだ。まったくセンスがない。",
+        "en": "The only problem with Microsoft is they just have no taste."
+      },
+      "attribution_status": "disputed",
+      "said_on": "1996",
+      "context": "PBS のドキュメンタリー『Triumph of the Nerds』でのコメントとして流布。",
+      "background": "本人発言に由来するが、ネット上では前後の文脈（『彼らを尊敬しないという意味ではない』等の留保）が落ちた短縮形で拡散している。引用時は文脈込みで扱う。",
+      "medium": "テレビインタビュー",
+      "meaning": "製品の良し悪しを『趣味・美意識』の水準で評価する Jobs の価値観。",
+      "relation_to_thought": "審美をビジネス評価軸にする姿勢。ただし短縮引用は本人の口ぶりを歪める。"
+    },
+    {
+      "id": "faster_horses_apocryphal",
+      "reliability": "legend",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 31（顧客調査への Jobs の考え方の文脈）" }],
+      "themes": ["顧客", "イノベーション"],
+      "text": {
+        "original": "If I had asked customers what they wanted, they would have said a faster horse.",
+        "original_lang": "en",
+        "ja": "顧客に望みを聞いていたら、『もっと速い馬』と答えただろう。",
+        "en": "If I had asked customers what they wanted, they would have said a faster horse."
+      },
+      "attribution_status": "misattributed",
+      "background": "ヘンリー・フォードに帰属されることが多いが、フォードの発言としても一次資料は確認されていない。Jobs 版として引用されることもあるが、Jobs がこの句を言った記録はない。Jobs 自身は『消費者は見せられるまで欲しいものが分からない』という趣旨を別の言い方で語っている（Isaacson）。",
+      "medium": "—",
+      "meaning": "既存の枠内の要望を集めても飛躍は生まれない、という主張の代名詞として使われる。",
+      "relation_to_thought": "Jobs の顧客調査観と親和的だが、本人の言葉として引用してはならない。回答では『そう要約されることがあるが本人の発言ではない』と扱う。"
+    }
+  ]
+}

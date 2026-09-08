@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "共通定義",
+  "description": "偉人KBの全スキーマが参照する共通型。信頼性ラベル・出典・部分日付・多言語テキスト・エントリ共通メタ。",
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "偉人・人物の識別子。ディレクトリ名と一致。"
+    },
+    "localId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "ファイル内一意のID。チャンクIDの素になるため一度付けたら変更しない。"
+    },
+    "partialDate": {
+      "type": "string",
+      "pattern": "^-?\\d{1,4}(-\\d{2}(-\\d{2})?)?$",
+      "description": "YYYY / YYYY-MM / YYYY-MM-DD。紀元前は先頭に-（ISO 8601拡張）。不確かな場合は同階層に approx:true を併記。"
+    },
+    "reliability": {
+      "type": "string",
+      "enum": ["primary", "secondary_reliable", "common_knowledge", "uncertain", "legend"],
+      "description": "primary=一次資料 / secondary_reliable=信頼できる二次資料 / common_knowledge=周知の事実 / uncertain=出典不確か / legend=伝説・逸話"
+    },
+    "sourceTier": {
+      "type": "string",
+      "enum": ["primary", "secondary_reliable", "tertiary", "questionable"]
+    },
+    "sourceRef": {
+      "type": "object",
+      "description": "個々の情報が参照する出典。source_id は sources.json のエントリを指す。",
+      "properties": {
+        "source_id": { "$ref": "#/$defs/localId" },
+        "locator": { "type": "string", "description": "ページ・章・段落・タイムコードなど" },
+        "quote": { "type": "string", "description": "該当箇所の原文抜粋（任意）" },
+        "url": { "type": "string", "format": "uri" },
+        "accessed": { "$ref": "#/$defs/partialDate" },
+        "note": { "type": "string" }
+      },
+      "required": ["source_id"],
+      "additionalProperties": false
+    },
+    "localizedText": {
+      "type": "object",
+      "description": "多言語テキスト。原語原文(original)を必ず保持できる。",
+      "properties": {
+        "ja": { "type": "string" },
+        "en": { "type": "string" },
+        "original": { "type": "string", "description": "原語での原文" },
+        "original_lang": { "type": "string", "description": "BCP47言語コード（例: en, de, la）" }
+      },
+      "additionalProperties": false
+    },
+    "dateRange": {
+      "type": "object",
+      "properties": {
+        "start": { "$ref": "#/$defs/partialDate" },
+        "end": { "$ref": "#/$defs/partialDate" }
+      },
+      "additionalProperties": false
+    },
+    "entryMeta": {
+      "type": "object",
+      "description": "配列エントリ共通メタ。各スキーマで allOf 合成して使う。",
+      "properties": {
+        "id": { "$ref": "#/$defs/localId" },
+        "reliability": { "$ref": "#/$defs/reliability" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "approx": { "type": "boolean", "default": false },
+        "disputed": { "type": "boolean", "default": false, "description": "史料間で見解が割れている" },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/sourceRef" } },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "themes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "相談内容とのマッチングに使う主題タグ（例: 仕事, 失敗, リーダーシップ, お金, 家族, 教育, 死生観, 挑戦, 人間関係）"
+        },
+        "people": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "関係人物。relationships.json の id か表示名。"
+        },
+        "rag_include": { "type": "boolean", "default": true, "description": "false なら Embedding 対象外" },
+        "notes": { "type": "string" }
+      },
+      "required": ["id", "reliability"]
+    }
+  }
+}

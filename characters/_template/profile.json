@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/profile.schema.json",
+  "character": "REPLACE_ME",
+  "display_name": { "ja": "", "en": "" },
+  "real_name": { "ja": "", "en": "" },
+  "aliases": [],
+  "nicknames": [],
+  "birth": { "date": "", "place": "", "sources": [] },
+  "death": { "date": "", "place": "", "cause": "", "sources": [] },
+  "nationality": [],
+  "origin_country": "",
+  "era": "",
+  "era_range": { "start": "", "end": "" },
+  "occupations": [],
+  "titles": [],
+  "organizations": [],
+  "family": [],
+  "education": [],
+  "mentors": [],
+  "students": [],
+  "main_regions": [],
+  "one_line": "",
+  "summary": "",
+  "speaking_style": {
+    "language": "",
+    "register": "",
+    "tone": "",
+    "traits": [],
+    "example_phrases": [],
+    "caveats": ""
+  },
+  "sources": []
+}

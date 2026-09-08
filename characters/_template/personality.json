@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/personality.schema.json",
+  "character": "REPLACE_ME",
+  "traits": [
+    {
+      "id": "example_trait",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "trait": "",
+      "polarity": "neutral",
+      "description": "",
+      "evidence": "",
+      "episode_ids": []
+    }
+  ],
+  "summary": {
+    "strengths": [],
+    "weaknesses": [],
+    "thinking_pattern": "",
+    "decision_making": "",
+    "anger_triggers": [],
+    "joy_triggers": [],
+    "with_subordinates": "",
+    "with_superiors": "",
+    "with_rivals": "",
+    "interpersonal_general": "",
+    "under_pressure": "",
+    "facing_difficulty": "",
+    "risk_taking": ""
+  },
+  "caveats": "",
+  "sources": []
+}

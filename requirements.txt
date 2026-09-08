@@ -1,0 +1,21 @@
+# 偉人相談AI — 本番（Railway）でインストールされる依存。
+# ローカル開発もこれで足りる。CLI/RAG のみなら API 層(fastapi/uvicorn)は未使用でも害はない。
+
+# --- RAG パイプライン ---
+pyyaml>=6.0
+jsonschema>=4.21
+referencing>=0.35
+numpy>=1.24
+
+# --- API 層（FastAPI） ---
+fastapi>=0.110
+uvicorn[standard]>=0.27
+
+# --- HTTP クライアント（Cloudflare Workers AI / Ollama との通信）---
+httpx>=0.26
+
+# --- 任意（未導入でも memory backend / cloudflare で動作） ---
+# chromadb>=0.5        # vectorstore.backend: chroma を使う場合
+# anthropic>=0.39      # llm.provider: anthropic
+# openai>=1.40         # llm.provider: openai / embeddings.provider: openai
+# voyageai>=0.2        # embeddings.provider: voyage

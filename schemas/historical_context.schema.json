@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "historical_context.schema.json",
+  "title": "時代背景（spec §12）",
+  "description": "その人物が生きた時代の政治/経済/科学/技術/社会/文化/戦争/国際情勢/当時の常識。現代の価値観だけで過去の人物を解釈しないための材料。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "period_label": {
+      "type": "string"
+    },
+    "span": {
+      "$ref": "common.schema.json#/$defs/dateRange"
+    },
+    "contexts": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": "string",
+                "enum": [
+                  "politics",
+                  "economy",
+                  "science",
+                  "technology",
+                  "society",
+                  "culture",
+                  "war",
+                  "international",
+                  "common_sense",
+                  "religion",
+                  "daily_life",
+                  "law"
+                ]
+              },
+              "region": {
+                "type": "string"
+              },
+              "period": {
+                "$ref": "common.schema.json#/$defs/dateRange"
+              },
+              "title": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "relevance_to_subject": {
+                "type": "string",
+                "description": "本人の人生・選択とどう関わるか"
+              },
+              "contrast_with_today": {
+                "type": "string",
+                "description": "現代の価値観・常識との違い"
+              }
+            },
+            "required": [
+              "domain",
+              "summary"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "contexts"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/works.schema.json",
+  "character": "REPLACE_ME",
+  "works": [
+    {
+      "id": "example_work",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "title": { "ja": "", "en": "", "original": "", "original_lang": "" },
+      "type": "book",
+      "year": "",
+      "description": "",
+      "context": "",
+      "purpose": "",
+      "collaborators": [],
+      "impact": "",
+      "reception": { "contemporary": "", "modern": "" },
+      "where_to_access": "",
+      "achievement_ids": []
+    }
+  ]
+}

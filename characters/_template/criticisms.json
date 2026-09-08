@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/criticisms.schema.json",
+  "character": "REPLACE_ME",
+  "items": [
+    {
+      "id": "example_criticism",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "kind": "modern_criticism",
+      "title": "",
+      "claim": "",
+      "by_whom": "",
+      "when": "",
+      "basis": "",
+      "rebuttal": "",
+      "status": "contested",
+      "significance": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/failures.schema.json",
+  "character": "REPLACE_ME",
+  "failures": [
+    {
+      "id": "example_failure",
+      "reliability": "secondary_reliable",
+      "sources": [],
+      "themes": [],
+      "people": [],
+      "title": "",
+      "category": "judgment",
+      "year": "",
+      "what_happened": "",
+      "context": "",
+      "his_role": "",
+      "criticism": "",
+      "consequence": "",
+      "recovery": "",
+      "lesson": "",
+      "related_people": [],
+      "quote_ids": []
+    }
+  ]
+}

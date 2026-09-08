@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schemas/achievements.schema.json",
+  "character": "steve_jobs",
+  "achievements": [
+    {
+      "id": "apple_ii_market",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 5-7" }],
+      "themes": ["起業", "プロダクト"],
+      "title": "Apple II で家庭用パソコン市場を立ち上げる",
+      "category": "product",
+      "year": "1977",
+      "what": "ウォズニアック設計の Apple II を、完成品・カラー表示・射出成形筐体・電源内蔵の『箱から出してすぐ使える』家電として製品化した。",
+      "why": "自作キット止まりだったコンピュータを、技術に詳しくない人にも届けるため。",
+      "how": "マイク・マークラの出資と事業計画、レジス・マッケナのマーケティング、量産設計への投資を組み合わせた。",
+      "difficulties": "自作文化のコミュニティに『完成品』を売ることへの反発、量産資金の不足。",
+      "outcome": "1980年の株式公開までに主要な収益源に成長し、Apple を業界の中心に据えた。",
+      "impact_contemporary": "パーソナルコンピュータが産業カテゴリとして確立。",
+      "impact_legacy": "『すぐ使える統合製品』という Apple の型を定義した。",
+      "collaborators": ["steve_wozniak", "マイク・マークラ"]
+    },
+    {
+      "id": "macintosh_gui",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 10-11" }],
+      "themes": ["プロダクト", "デザイン"],
+      "title": "Macintosh で GUI を主流市場に持ち込む",
+      "category": "product",
+      "year": "1984",
+      "what": "マウス操作・アイコン・複数書体を備えた個人向けコンピュータを一般消費者価格帯（2,495ドル）で発売した。",
+      "why": "コマンド入力を覚えなくても使える『万人のためのコンピュータ』を作るため。",
+      "how": "ゼロックス PARC で見た概念を、専任の少数チームで量産可能な形に落とし込んだ。",
+      "difficulties": "メモリ不足による低速、対応ソフトの少なさ、Jobs の完璧主義による納期崩れ。",
+      "outcome": "発売直後は販売不振で Jobs 失脚の一因になったが、デスクトップパブリッシング（Aldus PageMaker + LaserWriter）で用途を得て定着した。",
+      "impact_legacy": "現代のあらゆる GUI OS の商業的原点の一つ。",
+      "work_ids": ["macintosh_128k"]
+    },
+    {
+      "id": "apple_turnaround_1997_2011",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2011", "locator": "chap. 22-40" }],
+      "themes": ["リーダーシップ", "経営再建", "集中"],
+      "title": "破綻寸前の Apple を世界最大級の企業へ再建",
+      "category": "company",
+      "year_range": { "start": "1997", "end": "2011" },
+      "what": "製品ラインを4つに削減し、iMac→iPod→iTunes Store→iPhone→iPad→App Store と連続的に新カテゴリを投入して黒字化・急成長を実現した。",
+      "why": "『偉大な製品を作る会社』としての Apple を存続させるため。",
+      "how": "選択と集中、マイクロソフトからの出資受け入れ、小売直営店、デザイン部門の格上げ、ハードとソフトとサービスの垂直統合。",
+      "difficulties": "資金枯渇（90日で倒産と言われた）、士気の崩壊、iPod が Mac ユーザー以外に届くかという賭け。",
+      "outcome": "Apple は時価総額で世界最大級の企業になった（Jobs の在任中に達成の道筋がつき、死後に頂点へ）。",
+      "impact_legacy": "スマートフォン中心の産業構造、アプリ経済、音楽・出版の流通変化。"
+    }
+  ]
+}

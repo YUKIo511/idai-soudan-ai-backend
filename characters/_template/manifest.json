@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "slug": "REPLACE_ME",
+  "display_name": { "ja": "", "en": "" },
+  "one_line": "",
+  "era": "",
+  "birth_year": "",
+  "death_year": "",
+  "nationality": [],
+  "occupations": [],
+  "tags": [],
+  "language_primary": "",
+  "status": "draft",
+  "counts": {},
+  "kb": {}
+}

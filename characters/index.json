@@ -1,0 +1,162 @@
+{
+  "_note": "kb.cli reindex による生成物。手で編集しない。",
+  "characters": [
+    {
+      "slug": "albert_einstein",
+      "display_name": {
+        "ja": "アルベルト・アインシュタイン",
+        "en": "Albert Einstein"
+      },
+      "one_line": "特殊・一般相対性理論を築き、20世紀の物理学と時間・空間・重力の理解を作り変えた理論物理学者",
+      "era": "19世紀末〜20世紀半ば",
+      "birth_year": "1879",
+      "death_year": "1955",
+      "nationality": [
+        "ドイツ",
+        "スイス",
+        "アメリカ合衆国"
+      ],
+      "occupations": [
+        "理論物理学者"
+      ],
+      "tags": [
+        "科学",
+        "物理",
+        "思想",
+        "平和",
+        "教育"
+      ],
+      "language_primary": "de",
+      "status": "in_progress",
+      "counts": {
+        "timeline": 11,
+        "achievement": 6,
+        "failure": 5,
+        "quote": 6,
+        "statement": 4,
+        "philosophy": 7,
+        "relationship": 5,
+        "episode": 4,
+        "work": 5,
+        "context": 3,
+        "criticism": 4,
+        "personality_trait": 5,
+        "sources": 8
+      },
+      "kb": {
+        "embedding_model": "fake(model=hashing-256, dim=256)",
+        "embedding_dim": 256,
+        "vectorstore": "MemoryVectorStore",
+        "chunk_count": 69,
+        "rag_excluded": 0,
+        "last_built": "2026-09-07T02:55:36+00:00",
+        "content_hash": "462f3fba69877822"
+      }
+    },
+    {
+      "slug": "fukuzawa_yukichi",
+      "display_name": {
+        "ja": "福澤諭吉",
+        "en": "Yukichi Fukuzawa"
+      },
+      "one_line": "『学問のすゝめ』で個人の独立を説き、慶應義塾を創立して日本の近代化と啓蒙を主導した思想家・教育者",
+      "era": "幕末〜明治",
+      "birth_year": "1835",
+      "death_year": "1901",
+      "nationality": [
+        "日本"
+      ],
+      "occupations": [
+        "思想家",
+        "教育者",
+        "著述家",
+        "新聞発行人"
+      ],
+      "tags": [
+        "教育",
+        "思想",
+        "明治",
+        "啓蒙",
+        "著述"
+      ],
+      "language_primary": "ja",
+      "status": "in_progress",
+      "counts": {
+        "timeline": 11,
+        "achievement": 5,
+        "failure": 4,
+        "quote": 6,
+        "statement": 4,
+        "philosophy": 7,
+        "relationship": 5,
+        "episode": 4,
+        "work": 5,
+        "context": 4,
+        "criticism": 4,
+        "personality_trait": 5,
+        "sources": 8
+      },
+      "kb": {
+        "embedding_model": "fake(model=hashing-256, dim=256)",
+        "embedding_dim": 256,
+        "vectorstore": "MemoryVectorStore",
+        "chunk_count": 68,
+        "rag_excluded": 0,
+        "last_built": "2026-09-07T02:55:36+00:00",
+        "content_hash": "261686a884caa31e"
+      }
+    },
+    {
+      "slug": "steve_jobs",
+      "display_name": {
+        "ja": "スティーブ・ジョブズ",
+        "en": "Steve Jobs"
+      },
+      "one_line": "Apple を共同創業し、Mac・iPod・iPhone で個人向けコンピューティングを再定義した起業家",
+      "era": "20世紀後半〜21世紀初頭",
+      "birth_year": "1955",
+      "death_year": "2011",
+      "nationality": [
+        "アメリカ合衆国"
+      ],
+      "occupations": [
+        "起業家",
+        "実業家",
+        "プロダクトデザインの統括者"
+      ],
+      "tags": [
+        "テクノロジー",
+        "起業",
+        "プロダクト",
+        "デザイン",
+        "リーダーシップ"
+      ],
+      "language_primary": "en",
+      "status": "in_progress",
+      "counts": {
+        "timeline": 10,
+        "achievement": 3,
+        "failure": 5,
+        "quote": 9,
+        "statement": 3,
+        "philosophy": 7,
+        "relationship": 5,
+        "episode": 3,
+        "work": 4,
+        "context": 3,
+        "criticism": 4,
+        "personality_trait": 5,
+        "sources": 7
+      },
+      "kb": {
+        "embedding_model": "fake(model=hashing-256, dim=256)",
+        "embedding_dim": 256,
+        "vectorstore": "MemoryVectorStore",
+        "chunk_count": 65,
+        "rag_excluded": 0,
+        "last_built": "2026-09-07T02:55:36+00:00",
+        "content_hash": "02ced5c507476c3f"
+      }
+    }
+  ]
+}

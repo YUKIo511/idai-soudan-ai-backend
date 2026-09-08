@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schemas/sources.schema.json",
+  "character": "fukuzawa_yukichi",
+  "sources": [
+    {
+      "id": "fukuo_jiden",
+      "type": "autobiography",
+      "tier": "primary",
+      "title": "福翁自伝",
+      "authors": ["福澤諭吉（口述）", "矢野由次郎（筆記）"],
+      "publisher": "時事新報社（連載）／岩波文庫ほか",
+      "year": "1899",
+      "language": "ja",
+      "is_primary_source": true,
+      "reliability_note": "晩年の口述筆記。本人の視点と語り口を伝える一次資料だが、数十年前の記憶の再構成であり、年代や逸話の細部は他資料との照合が要る。自己演出も含む。"
+    },
+    {
+      "id": "gakumon_no_susume",
+      "type": "book",
+      "tier": "primary",
+      "title": "学問のすゝめ",
+      "authors": ["福澤諭吉"],
+      "publisher": "（初編〜十七編）",
+      "year": "1872",
+      "language": "ja",
+      "is_primary_source": true,
+      "reliability_note": "1872〜1876年に順次刊行された17編の合冊。当時としては桁外れの発行部数。初編と後半では論調に変化がある。"
+    },
+    {
+      "id": "bunmeiron_no_gairyaku",
+      "type": "book",
+      "tier": "primary",
+      "title": "文明論之概略",
+      "authors": ["福澤諭吉"],
+      "year": "1875",
+      "language": "ja",
+      "is_primary_source": true,
+      "reliability_note": "文明の発展段階と日本の独立を論じた主著。ギゾー、バックルらの西洋文明史論を下敷きにしている。"
+    },
+    {
+      "id": "seiyo_jijo",
+      "type": "book",
+      "tier": "primary",
+      "title": "西洋事情",
+      "authors": ["福澤諭吉"],
+      "year": "1866",
+      "language": "ja",
+      "is_primary_source": true,
+      "reliability_note": "欧米の政治・制度・生活を紹介した書。初編1866年、外編・二編と続く。幕末・明治初期のベストセラー。"
+    },
+    {
+      "id": "jiji_shinpo",
+      "type": "news_article",
+      "tier": "primary",
+      "title": "時事新報 社説（無署名）",
+      "authors": ["時事新報社（福澤諭吉が創刊・主宰）"],
+      "year": "1882",
+      "language": "ja",
+      "is_primary_source": true,
+      "reliability_note": "福澤が1882年に創刊した日刊紙。社説は無署名で、どこまでが福澤自身の執筆かは記事により議論がある（「脱亜論」など）。"
+    },
+    {
+      "id": "fukuzawa_zenshu",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "福澤諭吉全集（岩波書店）",
+      "authors": ["石河幹明 ほか 編"],
+      "publisher": "岩波書店",
+      "year": "1958",
+      "language": "ja",
+      "is_primary_source": false,
+      "reliability_note": "著作・書簡・時事新報社説を集成した基本資料集。ただし無署名社説の福澤への帰属は編纂者（石河幹明）の判断に依るところがあり、後年の研究で見直しがある。"
+    },
+    {
+      "id": "hirayama_2004",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "福沢諭吉の真実",
+      "authors": ["平山洋"],
+      "publisher": "文春新書",
+      "year": "2004",
+      "language": "ja",
+      "is_primary_source": false,
+      "reliability_note": "時事新報の無署名社説の多くは主筆・石河幹明の筆であり、福澤の思想像は全集編纂で歪められたと主張する。有力な問題提起だが学界で決着した見解ではない。"
+    },
+    {
+      "id": "maruyama_1986",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "「文明論之概略」を読む",
+      "authors": ["丸山眞男"],
+      "publisher": "岩波新書",
+      "year": "1986",
+      "language": "ja",
+      "is_primary_source": false,
+      "reliability_note": "政治思想史家による精読。福澤を近代日本の代表的思想家として高く評価する立場。解釈には丸山自身の問題関心が反映している。"
+    }
+  ]
+}

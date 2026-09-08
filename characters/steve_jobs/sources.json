@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schemas/sources.schema.json",
+  "character": "steve_jobs",
+  "sources": [
+    {
+      "id": "isaacson_2011",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "Steve Jobs",
+      "authors": ["Walter Isaacson"],
+      "publisher": "Simon & Schuster",
+      "year": "2011",
+      "isbn": "9781451648539",
+      "language": "en",
+      "is_primary_source": false,
+      "reliability_note": "本人の協力を得た公認伝記。40回超の本人インタビューと関係者100人超の証言に基づく。一方で本人が編集権を持たないと明記されつつも、存命関係者の証言に依存する箇所は主観が入りうる。"
+    },
+    {
+      "id": "becoming_2015",
+      "type": "book",
+      "tier": "secondary_reliable",
+      "title": "Becoming Steve Jobs",
+      "authors": ["Brent Schlender", "Rick Tetzeli"],
+      "publisher": "Crown Business",
+      "year": "2015",
+      "isbn": "9780385347402",
+      "language": "en",
+      "is_primary_source": false,
+      "reliability_note": "Schlender は1980年代から本人を長年取材した記者。NeXT期以降の成熟過程を重視し、Isaacson 版の人物像に一部反論する立場。"
+    },
+    {
+      "id": "stanford_2005",
+      "type": "speech",
+      "tier": "primary",
+      "title": "Stanford University Commencement Address",
+      "authors": ["Steve Jobs"],
+      "year": "2005",
+      "url": "https://news.stanford.edu/2005/06/12/youve-got-find-love-jobs-says/",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "本人が読み上げた原稿。Stanford が公式全文と映像を公開。本人発言として確度が高い一次資料。"
+    },
+    {
+      "id": "playboy_1985",
+      "type": "interview",
+      "tier": "primary",
+      "title": "Playboy Interview: Steve Jobs",
+      "authors": ["David Sheff"],
+      "publisher": "Playboy",
+      "year": "1985",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "1985年2月号。Apple 退社直前期の長時間インタビュー逐語。編集はあるが本人発言記録。"
+    },
+    {
+      "id": "wired_1996",
+      "type": "interview",
+      "tier": "primary",
+      "title": "Steve Jobs: The Next Insanely Great Thing",
+      "authors": ["Gary Wolf"],
+      "publisher": "Wired",
+      "year": "1996",
+      "url": "https://www.wired.com/1996/02/jobs-2/",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "NeXT 期のインタビュー逐語。"
+    },
+    {
+      "id": "d8_2010",
+      "type": "interview",
+      "tier": "primary",
+      "title": "Steve Jobs at D8 (All Things Digital)",
+      "authors": ["Walt Mossberg", "Kara Swisher"],
+      "publisher": "All Things Digital",
+      "year": "2010",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "公開ステージでの長時間対談。映像・書き起こしあり。"
+    },
+    {
+      "id": "macworld_2007",
+      "type": "speech",
+      "tier": "primary",
+      "title": "Macworld San Francisco 2007 Keynote (iPhone introduction)",
+      "authors": ["Steve Jobs"],
+      "year": "2007",
+      "language": "en",
+      "is_primary_source": true,
+      "reliability_note": "iPhone 発表基調講演。公式映像あり。"
+    }
+  ]
+}

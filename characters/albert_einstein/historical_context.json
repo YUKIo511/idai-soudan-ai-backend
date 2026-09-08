@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/historical_context.schema.json",
+  "character": "albert_einstein",
+  "period_label": "古典物理学の完成から量子・相対論革命、二度の世界大戦と核時代へ（1880s–1955）",
+  "span": { "start": "1879", "end": "1955" },
+  "contexts": [
+    {
+      "id": "physics_crisis_1900",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "pais_1982", "locator": "part II" }],
+      "themes": ["科学", "技術"],
+      "domain": "science",
+      "region": "ヨーロッパ",
+      "period": { "start": "1890", "end": "1910" },
+      "title": "『古典物理学はほぼ完成した』という空気と、その足元の亀裂",
+      "summary": "19世紀末、力学と電磁気学が体系化され、物理学に残る仕事は精度の改善だけだという見方もあった。一方で、黒体放射・光電効果・エーテルの検出失敗（マイケルソン＝モーリー）など、既存理論で説明できない現象が積み上がっていた。",
+      "relevance_to_subject": "アインシュタインはこの『小さな綻び』を、体系の外からではなく内側の原理を問い直すことで解いた。大学の外の一審査官だったことが、かえって学界の前提から自由でいられた。",
+      "contrast_with_today": "当時は一人の理論家が紙とペンで物理の根幹を書き換えられた。現在の基礎物理は巨大装置と国際共同体を要し、個人の思考実験だけで革命は起こしにくい。"
+    },
+    {
+      "id": "antisemitism_and_nationalism",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 15, 18" }],
+      "themes": ["政治", "社会"],
+      "domain": "politics",
+      "region": "ドイツ・ヨーロッパ",
+      "period": { "start": "1918", "end": "1945" },
+      "title": "反ユダヤ主義とナショナリズムの高まり",
+      "summary": "第一次大戦の敗戦と経済混乱の中、ドイツでは相対性理論を『ユダヤ的で非ドイツ的な物理学』と攻撃する運動（『ドイツ物理学』）が起きた。1933年にナチスが政権を握ると、ユダヤ系の学者は職を追われ、亡命した。",
+      "relevance_to_subject": "アインシュタインは有名税として脅迫を受け、1933年に亡命。以後、科学的発言と政治的発言が不可分になった。彼のシオニズム支持や平和主義の修正はこの文脈で理解される。",
+      "contrast_with_today": "科学理論に民族的レッテルを貼る運動が国家に支持された。現在では想像しにくいが、科学が政治的攻撃の標的になる構図自体は形を変えて残る。"
+    },
+    {
+      "id": "nuclear_age_dawn",
+      "reliability": "common_knowledge",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 21" }],
+      "themes": ["技術", "戦争", "倫理"],
+      "domain": "technology",
+      "region": "アメリカ・世界",
+      "period": { "start": "1938", "end": "1955" },
+      "title": "核分裂の発見から原爆・水爆へ",
+      "summary": "1938年末に核分裂が発見され、連鎖反応による爆弾の可能性が現実味を帯びた。ドイツの先行を恐れた亡命科学者たちが米政府を動かし、マンハッタン計画が始動。1945年に実戦使用され、1950年代には水爆が登場した。",
+      "relevance_to_subject": "E=mc² が兵器の理論的背景として語られ、1939年の書簡署名で彼は開発の入口に関わった。戦後は科学者の社会的責任を問う運動の象徴になった。",
+      "contrast_with_today": "科学的発見が数年で国家戦略と大量破壊兵器に直結する時代が始まった。研究者が『自分の発見の使われ方』を引き受けざるをえなくなった転換点。"
+    }
+  ]
+}

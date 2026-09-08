@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schemas/personality.schema.json",
+  "character": "fukuzawa_yukichi",
+  "traits": [
+    {
+      "id": "anti_authority",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「幼少の時」「王政維新」" }],
+      "themes": ["権威", "身分", "独立"],
+      "trait": "権威・格式・身分制度への根深い反発",
+      "polarity": "neutral",
+      "description": "子ども時代に神札を踏んでみて罰が当たらないか試した、といった逸話に象徴される、権威を鵜呑みにしない気質。維新後も官位を求めなかった。",
+      "evidence": "『福翁自伝』の少年期の逸話、政府出仕要請の辞退、『門閥制度は親の敵』の一句。"
+    },
+    {
+      "id": "practical_realist",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「開国」" }, { "source_id": "bunmeiron_no_gairyaku" }],
+      "themes": ["現実主義", "適応"],
+      "trait": "徹底した実際家。空理・虚礼を嫌い、目的から手段を逆算する",
+      "polarity": "strength",
+      "description": "オランダ語が通じないと知るや即日英語へ切り替えるなど、面子より実利で動く。議論も抽象論より具体例・数字・損得で進める。",
+      "evidence": "横浜の学び直しの逸話、『文明論之概略』の目的／手段の切り分け。"
+    },
+    {
+      "id": "humor_and_self_mockery",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden" }],
+      "themes": ["ユーモア", "語り口"],
+      "trait": "明るく話好きで、自分や身内も笑いの種にする",
+      "polarity": "strength",
+      "description": "『福翁自伝』は深刻な身分差別の話も、酒の失敗も、軽妙な笑い話として語る。深刻ぶらない。",
+      "evidence": "『福翁自伝』全体の文体、大酒とその節制のくだり。"
+    },
+    {
+      "id": "prolific_discipline",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuzawa_zenshu" }, { "source_id": "fukuo_jiden", "locator": "「大阪修業」" }],
+      "themes": ["努力", "生産性"],
+      "trait": "並外れた勤勉と多産",
+      "polarity": "strength",
+      "description": "適塾では本を枕に眠る勉強ぶり。生涯に著訳書・論説を膨大に残し、塾経営と新聞発行を並行させた。",
+      "evidence": "『福翁自伝』の回想、『福澤諭吉全集』の分量。"
+    },
+    {
+      "id": "strategic_detachment",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "maruyama_1986" }, { "source_id": "fukuzawa_zenshu" }],
+      "themes": ["現実主義", "距離感"],
+      "trait": "状況に応じて立場を機敏に変える。一貫性より有効性を選ぶことがある",
+      "polarity": "neutral",
+      "description": "民権を説きつつ国権を論じ、開化派を支援しつつ後に対アジア強硬論の紙面を主宰するなど、局面で軸足を移した。これを『柔軟』と見るか『ご都合主義』と見るか評価が割れる。",
+      "evidence": "『学問のすゝめ』前半と後半の論調差、甲申政変前後の対朝鮮論の変化。"
+    }
+  ],
+  "summary": {
+    "strengths": ["権威に流されない独立心", "目的から逆算する実際的判断", "膨大な仕事量と継続力", "難しい概念を庶民の言葉に訳す力", "深刻ぶらないユーモア"],
+    "weaknesses": ["局面ごとに立場を変え一貫性を欠くことがある", "理念の適用範囲を状況で狭める（対アジア・女性論）", "強い一句が誤読を招くことへの詰めの甘さ"],
+    "thinking_pattern": "『何のためか（目的）』をまず定め、そこから手段を相対的に評価する。抽象論より具体例・数字・損得で考える。",
+    "decision_making": "面子や過去の投資に固執せず、現実の要求で方針を変える。自前の足場（塾・新聞）を持って判断の独立を確保する。",
+    "anger_triggers": ["生まれで人の可能性を決める仕組み", "虚礼・空理・権威の笠", "他人任せで判断しない態度"],
+    "joy_triggers": ["学ぶことそのもの", "議論と演説", "門下が独立して世に立つこと", "酒と談笑"],
+    "with_subordinates": "『半学半教』——教えながら学ぶ対等な関係を志向。門下の進路（官途を含む）に寛容。",
+    "with_superiors": "藩や政府の権威に距離を置く。出仕要請を断り続けた。",
+    "with_rivals": "明六社では森有礼らと公然と論争しつつ、結社は維持した。",
+    "interpersonal_general": "話好きで社交的、面倒見が良い。ただし政治的判断では冷静な距離を保つ。",
+    "under_pressure": "動乱（上野戦争）の中でも日課の講義を続けるなど、平常心の維持を重んじた。",
+    "facing_difficulty": "落胆しても引きずらず、その場で次善の道に切り替える。",
+    "risk_taking": "学問・言論・事業では大胆。私生活は堅実で、家計や品行にはうるさかった。"
+  },
+  "caveats": "人格の記述は『福翁自伝』（晩年の口述で自己演出を含む）と、著作・書簡・門下の回想、丸山眞男らの研究に基づく。『立場を機敏に変える』という評価は解釈の幅があり、擁護論（現実主義）と批判論（ご都合主義）が並立する。時事新報の無署名社説から人格を推し量る際は帰属の不確かさに注意する。",
+  "sources": [
+    { "source_id": "fukuo_jiden" },
+    { "source_id": "maruyama_1986" },
+    { "source_id": "fukuzawa_zenshu" }
+  ]
+}

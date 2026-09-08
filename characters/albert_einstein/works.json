@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schemas/works.schema.json",
+  "character": "albert_einstein",
+  "works": [
+    {
+      "id": "paper_electrodynamics_1905",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "pais_1982", "locator": "chap. 7" }],
+      "themes": ["物理", "論文"],
+      "title": { "ja": "運動する物体の電気力学について", "en": "On the Electrodynamics of Moving Bodies", "original": "Zur Elektrodynamik bewegter Körper", "original_lang": "de" },
+      "type": "paper",
+      "year": "1905",
+      "description": "特殊相対性理論を提示した論文。光速度不変と相対性原理から、同時性の相対性・時間の遅れ・長さの収縮を導いた。先行研究の引用がほとんど無い異例の形式。",
+      "context": "『奇跡の年』の4本の一つ。特許庁勤務のかたわら執筆。",
+      "purpose": "電磁気学と力学の不整合を、エーテル抜きで解消する。",
+      "impact": "3〜4年で主要な物理学者に受容され、20世紀物理の前提になった。",
+      "reception": { "contemporary": "当初は反応が限定的。プランクが早期に評価した。", "modern": "物理学史上最も重要な論文の一つ。" },
+      "achievement_ids": ["special_relativity"]
+    },
+    {
+      "id": "paper_general_relativity_1916",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "pais_1982", "locator": "chap. 14" }],
+      "themes": ["物理", "論文"],
+      "title": { "ja": "一般相対性理論の基礎", "en": "The Foundation of the General Theory of Relativity", "original": "Die Grundlage der allgemeinen Relativitätstheorie", "original_lang": "de" },
+      "type": "paper",
+      "year": "1916",
+      "description": "前年に到達した重力場の方程式を体系的にまとめた論文。重力を時空の幾何学として記述する枠組みを提示。",
+      "context": "1907年の等価原理から8年、グロスマンらの数学的助力を経て完成。",
+      "impact": "水星の近日点移動を説明し、光の湾曲・重力赤方偏移を予言した。",
+      "reception": { "contemporary": "理解できる物理学者は当初ごく少数だった。", "modern": "現代宇宙論・重力波天文学の基礎文献。" },
+      "achievement_ids": ["general_relativity"]
+    },
+    {
+      "id": "book_world_as_i_see_it",
+      "reliability": "primary",
+      "sources": [{ "source_id": "world_as_i_see_it_1934" }],
+      "themes": ["思想", "著書"],
+      "title": { "ja": "私の見た世界", "en": "The World As I See It", "original": "Mein Weltbild", "original_lang": "de" },
+      "type": "book",
+      "year": "1934",
+      "description": "科学以外の随筆・講演・書簡を集めた論集。人生観、宇宙的宗教感情、平和主義、ユダヤ人問題などを扱う。",
+      "context": "亡命直後。ナチスへの抵抗と自己表明の意味も帯びた。",
+      "purpose": "科学者としてではなく一市民としての見解を示す。",
+      "impact": "『豚の理想』『一頭立ての馬』など、後年よく引かれる自己description の出所。",
+      "reception": { "contemporary": "広く読まれ、政治的にも注目された。", "modern": "本人の思想を知る基本文献。" }
+    },
+    {
+      "id": "book_ideas_and_opinions",
+      "reliability": "primary",
+      "sources": [{ "source_id": "ideas_and_opinions_1954" }],
+      "themes": ["思想", "著書"],
+      "title": { "ja": "晩年に想う（Ideas and Opinions）", "en": "Ideas and Opinions", "original": "Ideas and Opinions", "original_lang": "en" },
+      "type": "book",
+      "year": "1954",
+      "description": "『私の見た世界』以降の文章も加えた決定版の論集。科学論、教育論、平和論、社会論を収める。",
+      "context": "死の前年に編纂。",
+      "impact": "『なぜ社会主義か』『教育について』『理論物理学の方法』など重要な小論を一冊に集約。",
+      "reception": { "modern": "アインシュタインの非科学的著作の標準的参照元。" }
+    },
+    {
+      "id": "book_evolution_of_physics",
+      "reliability": "primary",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 20" }],
+      "themes": ["科学", "著書", "普及"],
+      "title": { "ja": "物理学はいかに創られたか", "en": "The Evolution of Physics", "original": "The Evolution of Physics", "original_lang": "en" },
+      "type": "book",
+      "year": "1938",
+      "description": "レオポルト・インフェルトとの共著。数式を使わず、力学から場の理論、相対論、量子論までの考え方の変遷を一般向けに語る。",
+      "context": "プリンストン時代。困窮していた協力者インフェルトの収入を助ける狙いもあった。",
+      "purpose": "物理学の『考え方の歴史』を専門外の読者に伝える。",
+      "collaborators": ["レオポルト・インフェルト"],
+      "impact": "科学啓蒙書の古典として読み継がれている。",
+      "reception": { "contemporary": "商業的にも成功した。", "modern": "入門書として今も版を重ねる。" }
+    }
+  ]
+}

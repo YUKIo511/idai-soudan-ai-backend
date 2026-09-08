@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "works.schema.json",
+  "title": "作品（spec §11）",
+  "description": "本/論文/絵画/音楽/映画/製品/発明/建築/政策など。タイトル/制作年/内容/背景/制作目的/影響/評価。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "works": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "title": {
+                "$ref": "common.schema.json#/$defs/localizedText"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "book",
+                  "paper",
+                  "painting",
+                  "sculpture",
+                  "music",
+                  "film",
+                  "product",
+                  "invention",
+                  "architecture",
+                  "policy",
+                  "software",
+                  "other"
+                ]
+              },
+              "year": {
+                "$ref": "common.schema.json#/$defs/partialDate"
+              },
+              "year_range": {
+                "$ref": "common.schema.json#/$defs/dateRange"
+              },
+              "description": {
+                "type": "string",
+                "description": "内容"
+              },
+              "context": {
+                "type": "string",
+                "description": "制作の背景"
+              },
+              "purpose": {
+                "type": "string",
+                "description": "制作目的"
+              },
+              "collaborators": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "impact": {
+                "type": "string"
+              },
+              "reception": {
+                "type": "object",
+                "properties": {
+                  "contemporary": {
+                    "type": "string",
+                    "description": "当時の評価"
+                  },
+                  "modern": {
+                    "type": "string",
+                    "description": "現代の評価"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "where_to_access": {
+                "type": "string",
+                "description": "所蔵先・入手先"
+              },
+              "achievement_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              }
+            },
+            "required": [
+              "title",
+              "type"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "works"
+  ],
+  "additionalProperties": false
+}

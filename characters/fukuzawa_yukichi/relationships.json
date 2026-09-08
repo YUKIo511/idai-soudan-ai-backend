@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schemas/relationships.schema.json",
+  "character": "fukuzawa_yukichi",
+  "people": [
+    {
+      "id": "ogata_koan",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「大阪修業」" }],
+      "themes": ["師", "教育", "学び"],
+      "name": { "ja": "緒方洪庵", "en": "Ogata Kōan", "original": "緒方洪庵", "original_lang": "ja" },
+      "relation_type": "mentor",
+      "relation_label": "適塾の主宰者。蘭学と学び方の師",
+      "period": { "start": "1855", "end": "1858" },
+      "how_they_met": "1855年、大坂の緒方洪庵の適塾に入門。",
+      "dynamic": "洪庵は医師・蘭学者で、身分によらず実力で塾生を遇した。福澤は原書講読で頭角を現し塾頭になった。学問が身分を超えて人を対等にする経験を、ここで得た。",
+      "key_events": [
+        { "date": "1857", "event": "塾頭に就任", "outcome": "指導と運営を担い、教える経験を積む" }
+      ],
+      "influence_on_subject": "『実学』と『半学半教』の原体験。生涯で最も勉強した時期と自伝で回想。",
+      "influence_on_other": "適塾からは福澤のほか大村益次郎、佐野常民ら多くの人材が出た。"
+    },
+    {
+      "id": "katsu_kaishu",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「亜米利加行」" }, { "source_id": "fukuzawa_zenshu" }],
+      "themes": ["人間関係", "対立", "在野と官"],
+      "name": { "ja": "勝海舟", "en": "Katsu Kaishū", "original": "勝海舟", "original_lang": "ja" },
+      "relation_type": "opponent",
+      "relation_label": "咸臨丸で同船した幕臣。後年、対立した",
+      "period": { "start": "1860", "end": "1901" },
+      "how_they_met": "1860年、遣米使節に随行する咸臨丸で同船（勝は艦の責任者、福澤は従者）。",
+      "dynamic": "船中から折り合いが悪かったと福澤は記す。維新後、旧幕臣でありながら新政府に仕えた勝を、福澤は『瘠我慢の説』（1891）で『二君に仕えた』と公然と批判した。勝は『行蔵は我に存す、毀誉は他人の主張』と受け流した。",
+      "key_events": [
+        { "date": "1860", "event": "咸臨丸で渡米、船中で不和", "outcome": "生涯の相性の悪さの始まり" },
+        { "date": "1891", "event": "福澤『瘠我慢の説』で勝・榎本武揚を批判", "outcome": "勝は反論せず『他人の主張』と応じた" }
+      ],
+      "influence_on_subject": "『士は瘠我慢（意地）を貫くべきか、現実に順応すべきか』という、福澤自身の生き方にも跳ね返る問いを立てさせた相手。",
+      "influence_on_other": "—"
+    },
+    {
+      "id": "mori_arinori",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuzawa_zenshu" }, { "source_id": "maruyama_1986" }],
+      "themes": ["人間関係", "言論", "論争"],
+      "name": { "ja": "森有礼", "en": "Mori Arinori", "original": "森有礼", "original_lang": "ja" },
+      "relation_type": "colleague",
+      "relation_label": "明六社の発起人。啓蒙の同志にして論争相手",
+      "period": { "start": "1873", "end": "1889" },
+      "how_they_met": "1873年、森の呼びかけで明六社の結成に参加。",
+      "dynamic": "西洋知識の普及という目的は共有したが、森が官（のち文部大臣）の側から国民教育を設計しようとしたのに対し、福澤は在野から個人の独立を説いた。学者が官に入る是非をめぐり誌上で論じ合った。",
+      "key_events": [
+        { "date": "1874", "event": "『明六雑誌』で学者の職分をめぐり論争", "outcome": "在野か官かという立場の違いが鮮明に" }
+      ],
+      "influence_on_subject": "『知識人はどこから発言すべきか』を突きつけた相手。福澤の在野主義を固めた。",
+      "influence_on_other": "森は文部大臣として学制を整備したが、1889年に暗殺された。"
+    },
+    {
+      "id": "obata_tokujiro",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuzawa_zenshu" }],
+      "themes": ["弟子", "協力", "教育"],
+      "name": { "ja": "小幡篤次郎", "en": "Obata Tokujirō", "original": "小幡篤次郎", "original_lang": "ja" },
+      "relation_type": "student",
+      "relation_label": "最も信頼した高弟。『学問のすゝめ』初編の連名者、慶應義塾長",
+      "period": { "start": "1864", "end": "1901" },
+      "how_they_met": "中津の同郷で、福澤を頼って江戸の塾に学んだ。",
+      "dynamic": "『学問のすゝめ』初編は福澤と小幡の連名で出された。翻訳・執筆・塾運営で福澤を支え、後に慶應義塾長を務めた。晩年の『修身要領』の文言整形にも関わった。",
+      "key_events": [
+        { "date": "1872", "event": "『学問のすゝめ』初編を福澤と連名で刊行", "outcome": "以後の編は福澤単著だが、初編は共同作業" }
+      ],
+      "influence_on_subject": "アイデアを世に出す実務を担うパートナー。福澤の構想は門下の実働で形になった。",
+      "influence_on_other": "福澤の思想の継承と、慶應義塾の制度化を担った。"
+    },
+    {
+      "id": "kim_okgyun_rel",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuzawa_zenshu" }, { "source_id": "maruyama_1986" }],
+      "themes": ["人間関係", "外交", "失敗"],
+      "name": { "ja": "金玉均", "en": "Kim Ok-gyun", "original": "金玉均", "original_lang": "ko" },
+      "relation_type": "collaborator",
+      "relation_label": "支援した朝鮮開化派の指導者",
+      "period": { "start": "1881", "end": "1894" },
+      "how_they_met": "1880年代前半、近代化を志す朝鮮の若者たちが慶應義塾に学び、福澤が交流した。",
+      "dynamic": "福澤は朝鮮の自立が日本の安全にも資すると考え、金らを資金・人脈で援助した。1884年の甲申政変が三日で崩れると、金は日本へ亡命、1894年に上海で暗殺された。この失敗の前後で福澤の対朝鮮論は硬化したとされる。",
+      "key_events": [
+        { "date": "1884-12", "event": "甲申政変、清軍介入で失敗", "outcome": "開化派壊滅、金は亡命" },
+        { "date": "1885", "event": "時事新報の対アジア論調が強硬化（「脱亜論」など）", "outcome": "福澤の思想評価が二分する一因に" }
+      ],
+      "influence_on_subject": "『外からの改革支援』の限界と代償を痛感させた出来事。",
+      "influence_on_other": "金の運動は挫折したが、朝鮮近代史の重要な一頁として記憶される。"
+    }
+  ]
+}

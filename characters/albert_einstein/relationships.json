@@ -1,0 +1,95 @@
+{
+  "$schema": "../../schemas/relationships.schema.json",
+  "character": "albert_einstein",
+  "people": [
+    {
+      "id": "mileva_maric",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 3, 9, 13" }],
+      "themes": ["家族", "人間関係", "失敗"],
+      "name": { "ja": "ミレヴァ・マリッチ", "en": "Mileva Marić", "original": "Милева Марић", "original_lang": "sr" },
+      "relation_type": "spouse",
+      "relation_label": "最初の妻。ETH の同級生で唯一の女子学生",
+      "period": { "start": "1896", "end": "1919" },
+      "how_they_met": "1896年、チューリヒ工科大学の物理教員課程に同級生として入学。学業と読書を通じて親密になった。",
+      "dynamic": "初期は物理を語り合う知的な伴侶で、恋文には研究の話も混じった。1902年に婚外子リーゼルが生まれ、1903年結婚。ベルリン移住後に破綻し、別居時にアインシュタインは家庭内の振る舞いを規定する『条件書き』を渡した。1919年離婚。",
+      "key_events": [
+        { "date": "1902", "event": "婚外子リーゼル誕生（消息不明）", "outcome": "結婚前の秘密として扱われた" },
+        { "date": "1914", "event": "別居と『条件書き』", "outcome": "ミレヴァは子2人とチューリヒへ戻る" },
+        { "date": "1919", "event": "離婚成立。将来のノーベル賞金を渡す取り決め", "outcome": "1922年、賞金がミレヴァ側へ" }
+      ],
+      "influence_on_subject": "学生期の議論相手。彼女の科学的寄与の度合いは資料が乏しく、研究者間で評価が割れる（過大評価・過小評価の両論がある）。",
+      "influence_on_other": "離婚後はうつと経済的困難、病気の次男の世話を抱えた。"
+    },
+    {
+      "id": "niels_bohr",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "pais_1982", "locator": "part VII" }, { "source_id": "isaacson_2007", "locator": "chap. 16" }],
+      "themes": ["人間関係", "論争", "物理"],
+      "name": { "ja": "ニールス・ボーア", "en": "Niels Bohr", "original": "Niels Bohr", "original_lang": "da" },
+      "relation_type": "rival",
+      "relation_label": "量子力学の解釈をめぐる生涯の論敵にして畏友",
+      "period": { "start": "1920", "end": "1955" },
+      "how_they_met": "1920年、ベルリンでの講演を機に対面。互いの誠実さをすぐ認め合った。",
+      "dynamic": "1927年・1930年のソルベー会議で、アインシュタインが不確定性原理を崩す思考実験を出し、ボーアが夜通し反論を組み立てる、という応酬を繰り返した。私的には深く敬愛し合った。",
+      "key_events": [
+        { "date": "1930", "event": "『光子箱』の思考実験でボーアに挑む", "outcome": "ボーアが一般相対論を使って反論、アインシュタインの想定を退けた" },
+        { "date": "1935", "event": "EPR 論文で量子力学の不完全性を主張", "outcome": "ボーアが反論。論争は決着せず、後のベル実験へ" }
+      ],
+      "influence_on_subject": "生涯最大の知的好敵手。負け続けたが、その問いが量子情報科学を生んだ。",
+      "influence_on_other": "ボーアは死の前日まで『光子箱』の図を黒板に描いていたと伝わる。"
+    },
+    {
+      "id": "leo_szilard",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 21" }],
+      "themes": ["人間関係", "科学と責任", "政治"],
+      "name": { "ja": "レオ・シラード", "en": "Leó Szilárd", "original": "Szilárd Leó", "original_lang": "hu" },
+      "relation_type": "colleague",
+      "relation_label": "ベルリン時代の共同発明者。1939年書簡の起草者",
+      "period": { "start": "1926", "end": "1955" },
+      "how_they_met": "1920年代ベルリンで、家庭用冷蔵庫の特許を共同で出願する仲だった（可動部のないポンプ）。",
+      "dynamic": "1939年、シラードが核連鎖反応の危険を察知し、大統領へ届ける『名声』としてアインシュタインの署名を求めた。アインシュタインは科学的細部より政治的判断で応じた。",
+      "key_events": [
+        { "date": "1939-07", "event": "シラードがロングアイランドのアインシュタインを訪ね、書簡を起草", "outcome": "8月2日署名、10月に大統領へ" }
+      ],
+      "influence_on_subject": "アインシュタインを一度だけ核開発の入口に立たせた人物。",
+      "influence_on_other": "シラード自身も後に原爆の対日使用に反対し、軍縮運動へ向かった。"
+    },
+    {
+      "id": "marcel_grossmann",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "pais_1982", "locator": "chap. 12" }],
+      "themes": ["人間関係", "協力", "友情"],
+      "name": { "ja": "マルセル・グロスマン", "en": "Marcel Grossmann", "original": "Marcel Grossmann", "original_lang": "de" },
+      "relation_type": "friend",
+      "relation_label": "学生時代の親友。就職の恩人にして一般相対論の数学の師",
+      "period": { "start": "1896", "end": "1936" },
+      "how_they_met": "ETH の同級生。几帳面なグロスマンの講義ノートが、出席の悪いアインシュタインの試験を救った。",
+      "dynamic": "卒業後、父の伝手でアインシュタインを特許庁に推薦。1912年からは、一般相対論に必要なリーマン幾何学・テンソル解析をアインシュタインに教え、共著論文も出した。",
+      "key_events": [
+        { "date": "1902", "event": "特許庁の職を紹介", "outcome": "『奇跡の年』を可能にした安定" },
+        { "date": "1913", "event": "重力理論の数学的枠組みを共同で構築", "outcome": "1915年の場の方程式への足場" }
+      ],
+      "influence_on_subject": "『友人に助けを求める』ことをためらわなかった一例。数学の弱さを他者の力で補った。",
+      "influence_on_other": "アインシュタインは晩年、多発性硬化症を患ったグロスマンに感謝の手紙を書いている。"
+    },
+    {
+      "id": "elsa_einstein",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "isaacson_2007", "locator": "chap. 13, 19" }],
+      "themes": ["家族", "人間関係"],
+      "name": { "ja": "エルザ・アインシュタイン", "en": "Elsa Einstein", "original": "Elsa Einstein", "original_lang": "de" },
+      "relation_type": "spouse",
+      "relation_label": "二番目の妻。母方の従姉で、身の回りと来客を取り仕切った",
+      "period": { "start": "1912", "end": "1936" },
+      "how_they_met": "幼少期からの親戚。1912年、ベルリンで再会し関係が深まった。1919年、ミレヴァとの離婚成立後に結婚。",
+      "dynamic": "研究に没頭する夫の生活を実務面で支え、名声に伴う社交をさばいた。夫の他の女性関係には諦めに近い態度だったと伝わる。1936年、心臓・腎臓の病でプリンストンにて死去。",
+      "key_events": [
+        { "date": "1933", "event": "ドイツからの亡命に同行", "outcome": "プリンストンでの生活を立ち上げた" }
+      ],
+      "influence_on_subject": "研究に必要な『静けさと段取り』を外部化してくれる存在だった。",
+      "influence_on_other": "—"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "personality.schema.json",
+  "title": "人格（spec §8）",
+  "description": "証拠付きの traits を主とし、要約フィールドには全体 caveats を必ず添える。史料から確認できない心理状態を事実として断定しない。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "traits": {
+      "type": "array",
+      "description": "性格特性。1つずつ証拠と出典を持たせる。",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "trait": {
+                "type": "string"
+              },
+              "polarity": {
+                "type": "string",
+                "enum": [
+                  "strength",
+                  "weakness",
+                  "neutral"
+                ]
+              },
+              "description": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "string",
+                "description": "この特性を裏づける具体的な逸話・発言・証言"
+              },
+              "episode_ids": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/localId"
+                }
+              }
+            },
+            "required": [
+              "trait",
+              "description"
+            ]
+          }
+        ]
+      }
+    },
+    "summary": {
+      "type": "object",
+      "description": "要約。各項目は traits から導けるものに限る。",
+      "properties": {
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "thinking_pattern": {
+          "type": "string"
+        },
+        "decision_making": {
+          "type": "string",
+          "description": "意思決定の方法"
+        },
+        "anger_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "怒るポイント"
+        },
+        "joy_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "喜ぶポイント"
+        },
+        "with_subordinates": {
+          "type": "string",
+          "description": "部下への接し方"
+        },
+        "with_superiors": {
+          "type": "string",
+          "description": "上司への接し方"
+        },
+        "with_rivals": {
+          "type": "string",
+          "description": "ライバルへの接し方"
+        },
+        "interpersonal_general": {
+          "type": "string",
+          "description": "人との接し方（一般）"
+        },
+        "under_pressure": {
+          "type": "string",
+          "description": "プレッシャーへの対応"
+        },
+        "facing_difficulty": {
+          "type": "string",
+          "description": "困難への対応"
+        },
+        "risk_taking": {
+          "type": "string",
+          "description": "リスクの取り方"
+        }
+      },
+      "additionalProperties": false
+    },
+    "caveats": {
+      "type": "string",
+      "description": "例: 内面描写の多くは同時代者の証言と回想に基づき、本人の自己申告とは一致しない場合がある"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/sourceRef"
+      }
+    }
+  },
+  "required": [
+    "character",
+    "traits",
+    "caveats"
+  ],
+  "additionalProperties": false
+}

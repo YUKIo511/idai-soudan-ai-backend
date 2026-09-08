@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "manifest.schema.json",
+  "title": "偉人マニフェスト（一覧表示・ビルド管理）",
+  "description": "characters/<slug>/manifest.json。kb.reindex が全 manifest を characters/index.json に集約し、一覧APIが参照する。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "display_name": {
+      "type": "object",
+      "properties": {
+        "ja": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ja"
+      ],
+      "additionalProperties": false
+    },
+    "one_line": {
+      "type": "string"
+    },
+    "era": {
+      "type": "string"
+    },
+    "birth_year": {
+      "$ref": "common.schema.json#/$defs/partialDate"
+    },
+    "death_year": {
+      "$ref": "common.schema.json#/$defs/partialDate"
+    },
+    "nationality": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "occupations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "portrait": {
+      "type": "string",
+      "description": "画像パスまたはURL（任意）"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language_primary": {
+      "type": "string",
+      "description": "主要言語 BCP47"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in_progress",
+        "reviewed",
+        "published"
+      ]
+    },
+    "counts": {
+      "type": "object",
+      "description": "kb.reindex が各ファイルのエントリ数を自動集計。UIの完成度表示に使う。",
+      "properties": {
+        "timeline": {
+          "type": "integer"
+        },
+        "achievements": {
+          "type": "integer"
+        },
+        "failures": {
+          "type": "integer"
+        },
+        "quotes": {
+          "type": "integer"
+        },
+        "statements": {
+          "type": "integer"
+        },
+        "philosophy": {
+          "type": "integer"
+        },
+        "personality_traits": {
+          "type": "integer"
+        },
+        "relationships": {
+          "type": "integer"
+        },
+        "episodes": {
+          "type": "integer"
+        },
+        "works": {
+          "type": "integer"
+        },
+        "historical_context": {
+          "type": "integer"
+        },
+        "criticisms": {
+          "type": "integer"
+        },
+        "sources": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    },
+    "kb": {
+      "type": "object",
+      "description": "ビルド成果物のメタ。kb.embed が更新。",
+      "properties": {
+        "embedding_model": {
+          "type": "string"
+        },
+        "embedding_dim": {
+          "type": "integer"
+        },
+        "vectorstore": {
+          "type": "string"
+        },
+        "chunk_count": {
+          "type": "integer"
+        },
+        "rag_excluded": {
+          "type": "integer",
+          "description": "rag_include=false で Vector Store に登録しなかったチャンク数"
+        },
+        "last_built": {
+          "type": "string",
+          "description": "ISO 8601 datetime"
+        },
+        "content_hash": {
+          "type": "string",
+          "description": "構造化データのハッシュ。差分ビルド判定用。"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "slug",
+    "display_name",
+    "status"
+  ],
+  "additionalProperties": false
+}

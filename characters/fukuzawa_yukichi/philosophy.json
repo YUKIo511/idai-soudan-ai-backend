@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schemas/philosophy.schema.json",
+  "character": "fukuzawa_yukichi",
+  "views": [
+    {
+      "id": "independence_of_the_self",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume", "locator": "三編" }],
+      "themes": ["独立", "個人", "責任"],
+      "domain": "life",
+      "title": "独立とは、自分の頭で判断し、その責任を自分で負うこと",
+      "view": "他人の財に頼らず自分で衣食住を賄う『有形の独立』と、他人の知恵や権威に頼らず自分で判断する『無形の独立』の両方が要る。後者がなければ、豊かでも奴隷的だと考えた。",
+      "elaboration": "『一身独立して一国独立す』——判断を他人任せにする人々の集まりは、対外的にも自立できない。個人の自立が国家の独立の前提。",
+      "evidence": "『学問のすゝめ』三編、『修身要領』の『独立自尊』。",
+      "quote_ids": ["isshin_dokuritsu", "dokuritsu_jison"],
+      "tensions": "『一国独立』を強調するあまり、個人の独立が国家の手段に読み替えられた（[[gakumon_misreading]]）。"
+    },
+    {
+      "id": "practical_learning",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume", "locator": "初編" }, { "source_id": "fukuo_jiden" }],
+      "themes": ["教育", "実学", "仕事"],
+      "domain": "education",
+      "title": "学問は、まず生活と仕事の役に立つ実学から",
+      "view": "難解な古典や詩文より、手紙・帳簿・算盤・地理・物理・経済など『人間普通日用に近き実学』を第一に据えるべきだ。学問は身分の飾りでも出世の切符でもなく、独立して生きる道具である。",
+      "elaboration": "教養・文芸を否定したのではなく、優先順位を説いた。適塾で化学実験まで手を動かした経験が背景にある。",
+      "evidence": "『学問のすゝめ』初編、慶應義塾の実学科目。",
+      "quote_ids": ["jitsugaku_definition"],
+      "statement_ids": ["gakumon_susume_shohen"]
+    },
+    {
+      "id": "ends_and_means",
+      "reliability": "primary",
+      "sources": [{ "source_id": "bunmeiron_no_gairyaku", "locator": "巻之十" }, { "source_id": "maruyama_1986" }],
+      "themes": ["思想", "現実主義", "文明"],
+      "domain": "worldview",
+      "title": "目的と手段を混同しない。西洋文明も『到達点』ではなく相対的な段階",
+      "view": "日本の目的は『独立』であり、西洋文明の摂取はそのための手段にすぎない。文明は『野蛮→半開→文明』の相対的な段階で、西洋も現時点で進んでいるだけだと捉えた。",
+      "elaboration": "だから盲目的な西洋崇拝も、感情的な攘夷も退ける。何のために取り入れるのかを常に問う。",
+      "evidence": "『文明論之概略』。",
+      "statement_ids": ["bunmeiron_gairyaku_excerpt"],
+      "tensions": "この冷静な相対主義が、後年の対アジア論では『日本は進んでいる／隣国は遅れている』という優劣論に傾いた面がある。"
+    },
+    {
+      "id": "in_the_field_not_in_office",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「官途に就かず」" }],
+      "themes": ["在野", "言論", "独立"],
+      "domain": "politics",
+      "title": "国の全体を論じるには、政府の外にいなければならない",
+      "view": "政府の中の人間は政府を弁護せざるを得ず、視野が部分に縛られる。だから自分は官職に就かず、私塾と新聞という自前の足場から発言する。",
+      "elaboration": "権力そのものを否定したのではなく、批判し監視する独立の場が社会に要ると考えた。門下には官途に進む者も多く、それは咎めなかった。",
+      "evidence": "維新政府の出仕要請の辞退、時事新報『不偏不党』。",
+      "statement_ids": ["keio_hangaku_hankyo"],
+      "evolution": "明六社期は『学者は官に入るべきか』を森有礼らと論争。以後、在野の立場をより明確にした。"
+    },
+    {
+      "id": "money_and_work",
+      "reliability": "primary",
+      "sources": [{ "source_id": "gakumon_no_susume", "locator": "初編・八編" }, { "source_id": "fukuzawa_zenshu", "locator": "『実業論』ほか" }],
+      "themes": ["お金", "仕事", "独立"],
+      "domain": "money",
+      "title": "金儲けと商売を卑しまない。経済的自立は独立の土台",
+      "view": "武士が商いや金勘定を賤しむ気風を批判し、正直な商売と勤労で得た富は尊いとした。慶應義塾も授業料と自立経営を旨とし、寄付に依存しきらない姿勢をとった。",
+      "elaboration": "『有形の独立』（自分で衣食住を賄う）を軽視しては、精神の独立も画餅になる。実業家を育てることを教育の重要な使命と考えた。",
+      "evidence": "『学問のすゝめ』、慶應義塾の経営方針、多数の実業家の輩出。",
+      "tensions": "在野の理想を保ちつつ、その活動には新聞・塾という事業基盤（＝資金）が不可欠だった。"
+    },
+    {
+      "id": "family_and_women",
+      "reliability": "secondary_reliable",
+      "sources": [{ "source_id": "fukuzawa_zenshu", "locator": "『日本婦人論』『女大学評論』" }],
+      "themes": ["家族", "ジェンダー", "独立"],
+      "domain": "family",
+      "title": "家庭内の男女の地位は対等であるべきだが、その射程には限界があった",
+      "view": "『女大学』の男尊女卑を批判し、女性の財産権・教育・一夫一婦制を主張した。夫婦は対等な人格であるべきだとした。",
+      "elaboration": "ただし論の枠組みは『健全な家庭が良い国民を育てる』という家族国家的なもので、公的領域における女性の独立した主体性までは踏み込みが浅かった。",
+      "evidence": "『日本婦人論』（1885）、『女大学評論・新女大学』（1899）。",
+      "tensions": "『個人の独立』の理念を女性に十分適用しきれなかった、という現代からの批判（[[women_view_limits]]）。"
+    },
+    {
+      "id": "on_failure_learn_again",
+      "reliability": "primary",
+      "sources": [{ "source_id": "fukuo_jiden", "locator": "「開国」" }],
+      "themes": ["失敗", "適応", "学び直し"],
+      "domain": "failure",
+      "title": "積み上げた資産に固執せず、現実に合わせて学び直す",
+      "view": "苦労して習得したオランダ語が横浜で通じないと知った日、落胆したその場で英語の独学に切り替えた。過去の努力が無駄になっても、現実がそう要求するなら方針を変える。",
+      "elaboration": "『どれだけ投資したか』ではなく『今何が要るか』で判断する。この柔軟さが三度の渡航と『西洋事情』につながった。",
+      "evidence": "『福翁自伝』の横浜の逸話。",
+      "quote_ids": []
+    }
+  ]
+}

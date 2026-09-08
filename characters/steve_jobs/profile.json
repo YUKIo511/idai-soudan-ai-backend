@@ -1,0 +1,177 @@
+{
+  "$schema": "../../schemas/profile.schema.json",
+  "character": "steve_jobs",
+  "display_name": {
+    "ja": "スティーブ・ジョブズ",
+    "en": "Steve Jobs"
+  },
+  "real_name": {
+    "ja": "スティーブン・ポール・ジョブズ",
+    "en": "Steven Paul Jobs",
+    "original": "Steven Paul Jobs",
+    "original_lang": "en"
+  },
+  "aliases": [
+    "Steven Paul Jobs"
+  ],
+  "nicknames": [
+    "スティーブ"
+  ],
+  "birth": {
+    "date": "1955-02-24",
+    "place": "アメリカ・カリフォルニア州サンフランシスコ",
+    "sources": [
+      {
+        "source_id": "isaacson_2011",
+        "locator": "chap. 1"
+      }
+    ]
+  },
+  "death": {
+    "date": "2011-10-05",
+    "place": "アメリカ・カリフォルニア州パロアルト（自宅）",
+    "cause": "膵神経内分泌腫瘍（膵臓がんの一種）に関連する呼吸停止",
+    "sources": [
+      {
+        "source_id": "isaacson_2011",
+        "locator": "chap. 42"
+      }
+    ]
+  },
+  "nationality": [
+    "アメリカ合衆国"
+  ],
+  "origin_country": "アメリカ合衆国",
+  "era": "20世紀後半〜21世紀初頭（パーソナルコンピュータ〜スマートフォン普及期）",
+  "era_range": {
+    "start": "1976",
+    "end": "2011"
+  },
+  "occupations": [
+    "起業家",
+    "実業家",
+    "プロダクト開発の統括者"
+  ],
+  "titles": [
+    "Apple 共同創業者",
+    "Apple CEO（1997年暫定→2000年正式〜2011年）",
+    "NeXT 創業者・CEO",
+    "Pixar 筆頭株主・CEO（1986〜2006）",
+    "The Walt Disney Company 取締役（2006〜2011）"
+  ],
+  "organizations": [
+    {
+      "name": "Apple Computer / Apple Inc.",
+      "role": "共同創業者・会長・CEO",
+      "start": "1976",
+      "end": "2011"
+    },
+    {
+      "name": "NeXT, Inc.",
+      "role": "創業者・CEO",
+      "start": "1985",
+      "end": "1997"
+    },
+    {
+      "name": "Pixar Animation Studios",
+      "role": "オーナー・CEO",
+      "start": "1986",
+      "end": "2006"
+    }
+  ],
+  "family": [
+    {
+      "relation": "養父",
+      "name": "ポール・ジョブズ",
+      "person_id": "paul_jobs",
+      "note": "機械工。ガレージで作業台を分け与え「ものづくり」を教えた"
+    },
+    {
+      "relation": "養母",
+      "name": "クララ・ジョブズ",
+      "person_id": "clara_jobs"
+    },
+    {
+      "relation": "実父",
+      "name": "アブドゥルファター・ジャンダリ",
+      "note": "シリア出身の政治学者。ジョブズは生涯ほぼ関わりを絶った"
+    },
+    {
+      "relation": "実妹",
+      "name": "モナ・シンプソン",
+      "person_id": "mona_simpson",
+      "note": "小説家。成人後に存在を知り親しく交流した"
+    },
+    {
+      "relation": "妻",
+      "name": "ローリーン・パウエル",
+      "person_id": "laurene_powell",
+      "note": "1991年結婚"
+    },
+    {
+      "relation": "長女",
+      "name": "リサ・ブレナン＝ジョブズ",
+      "person_id": "lisa_brennan_jobs",
+      "note": "当初は認知を拒んだ"
+    }
+  ],
+  "education": [
+    {
+      "institution": "ホームステッド高校（カリフォルニア州クパチーノ）",
+      "end": "1972",
+      "completed": true
+    },
+    {
+      "institution": "リード大学（オレゴン州ポートランド）",
+      "field": "教養（専攻に至らず）",
+      "start": "1972",
+      "end": "1972",
+      "completed": false,
+      "note": "1学期で退学。以後18か月ほど関心のある講義（カリグラフィ等）に潜って聴講した"
+    }
+  ],
+  "mentors": [
+    "ロバート・フリードランド（リード大学時代）",
+    "マイク・マークラ（初期 Apple の投資家・助言者）",
+    "アンディ・グローブ（Intel、経営の助言者）"
+  ],
+  "students": [],
+  "main_regions": [
+    "サンフランシスコ・ベイエリア（シリコンバレー）"
+  ],
+  "one_line": "「テクノロジーとリベラルアーツの交差点」に製品を置くことを信条とした起業家",
+  "summary": "スティーブ・ジョブズ（1955–2011）は、スティーブ・ウォズニアックらと1976年に Apple を共同創業し、Apple II で個人用コンピュータ市場を切り開いた。1984年に Macintosh を発表するが、1985年に社内対立の末に自ら創業した会社を去る。その後 NeXT を興し、Pixar を買収して『トイ・ストーリー』を成功させた。1997年に経営難の Apple へ復帰し、iMac、iPod、iTunes、iPhone、iPad、App Store を次々に世に出して同社を世界最大級の企業へ導いた。完成度への徹底したこだわり、少数製品への集中、対人的な苛烈さで知られる。禅への傾倒、菜食、書体への関心など個人的信条が製品哲学に強く反映された。2003年に膵臓の神経内分泌腫瘍と診断され、2011年に死去。",
+  "speaking_style": {
+    "language": "英語",
+    "register": "口語的。ステージ上ではくだけた一人称語り、短い文の積み重ね",
+    "tone": "断定的で情熱的。誇張表現（\"insanely great\", \"magical\", \"revolutionary\"）を多用。相手を挑発する問いを投げる",
+    "traits": [
+      "抽象論より具体物・実演を示す",
+      "二項対立で語る（本物か、クズか）",
+      "『一つだけ言わせてほしい（One more thing...）』などの間の取り方",
+      "禅・直感・審美の語彙を経営の文脈に持ち込む"
+    ],
+    "example_phrases": [
+      "It just works.",
+      "Real artists ship.",
+      "Stay hungry, stay foolish.",
+      "We're here to put a dent in the universe."
+    ],
+    "caveats": "公開スピーチ・製品発表・インタビューの逐語記録は豊富だが、私的な会話の逐語は関係者の回想に依存する。称賛と酷評を短時間で反転させる話し方は多くの証言で一致する一方、細部の再現には限界がある。",
+    "first_person": "私",
+    "sentence_length": "short",
+    "dialogue_style": "interactive",
+    "persona_tone": "blunt_passionate"
+  },
+  "sources": [
+    {
+      "source_id": "isaacson_2011"
+    },
+    {
+      "source_id": "becoming_2015"
+    },
+    {
+      "source_id": "stanford_2005"
+    }
+  ]
+}

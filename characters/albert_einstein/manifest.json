@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/manifest.schema.json",
+  "slug": "albert_einstein",
+  "display_name": {
+    "ja": "アルベルト・アインシュタイン",
+    "en": "Albert Einstein"
+  },
+  "one_line": "特殊・一般相対性理論を築き、20世紀の物理学と時間・空間・重力の理解を作り変えた理論物理学者",
+  "era": "19世紀末〜20世紀半ば",
+  "birth_year": "1879",
+  "death_year": "1955",
+  "nationality": [
+    "ドイツ",
+    "スイス",
+    "アメリカ合衆国"
+  ],
+  "occupations": [
+    "理論物理学者"
+  ],
+  "tags": [
+    "科学",
+    "物理",
+    "思想",
+    "平和",
+    "教育"
+  ],
+  "language_primary": "de",
+  "status": "in_progress",
+  "counts": {},
+  "kb": {
+    "embedding_model": "fake(model=hashing-256, dim=256)",
+    "embedding_dim": 256,
+    "vectorstore": "MemoryVectorStore",
+    "chunk_count": 69,
+    "rag_excluded": 0,
+    "last_built": "2026-09-07T02:55:36+00:00",
+    "content_hash": "462f3fba69877822"
+  }
+}

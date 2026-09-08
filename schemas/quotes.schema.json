@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "quotes.schema.json",
+  "title": "名言データベース（spec §5）",
+  "description": "大量保存を前提。attribution_status で本人発言の確実性を必須管理し、確認できない言葉を本人の名言として扱わせない。",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "エディタ補完用のスキーマ参照。検証では無視する。"
+    },
+    "character": {
+      "$ref": "common.schema.json#/$defs/slug"
+    },
+    "quotes": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "common.schema.json#/$defs/entryMeta"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "text": {
+                "$ref": "common.schema.json#/$defs/localizedText",
+                "description": "名言本文。original=原文、ja/en=翻訳。"
+              },
+              "attribution_status": {
+                "type": "string",
+                "enum": [
+                  "verified",
+                  "likely",
+                  "disputed",
+                  "misattributed",
+                  "apocryphal"
+                ],
+                "description": "verified=一次資料で本人発言と確認 / likely=信頼できる二次資料 / disputed=帰属に議論あり / misattributed=別人の言葉 / apocryphal=出典不明の作られた言葉。後2者は本人の言葉として引用させない。"
+              },
+              "said_on": {
+                "$ref": "common.schema.json#/$defs/partialDate",
+                "description": "発言日時"
+              },
+              "said_at": {
+                "type": "string",
+                "description": "発言場所"
+              },
+              "audience": {
+                "type": "string",
+                "description": "発言した相手"
+              },
+              "context": {
+                "type": "string",
+                "description": "発言した状況"
+              },
+              "background": {
+                "type": "string",
+                "description": "その言葉が生まれた背景"
+              },
+              "medium": {
+                "type": "string",
+                "description": "初出媒体（スピーチ/著書/インタビュー/手紙 など）"
+              },
+              "first_appearance": {
+                "type": "string",
+                "description": "最初に記録・出版された媒体と年"
+              },
+              "meaning": {
+                "type": "string",
+                "description": "その言葉の意味"
+              },
+              "relation_to_thought": {
+                "type": "string",
+                "description": "その人物の思想との関係"
+              },
+              "variants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "流布している異なる表現"
+              },
+              "statement_id": {
+                "$ref": "common.schema.json#/$defs/localId",
+                "description": "statements.json の該当資料"
+              }
+            },
+            "required": [
+              "text",
+              "attribution_status"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "character",
+    "quotes"
+  ],
+  "additionalProperties": false
+}
